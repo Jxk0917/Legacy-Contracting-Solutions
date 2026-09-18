@@ -1,0 +1,135 @@
+[
+  {
+    "id": "boerne-pool-excavation",
+    "title": "Pool Excavation",
+    "location": "Boerne, TX",
+    "category": "excavation",
+    "serviceLabel": "Excavation & Site Work",
+    "measurement": null,
+    "summary": "Excavation for a new pool build in Boerne.",
+    "scope": ["Pool excavation"],
+    "featured": true,
+    "images": [],
+    "beforeAfter": null,
+    "detailsNeeded": [
+      "Photos",
+      "Pool size or dig depth, if he wants it stated",
+      "Whether he worked directly for the homeowner or for a pool builder"
+    ]
+  },
+  {
+    "id": "fence-refurbishment-staining",
+    "title": "Fence Refurbishment and Staining",
+    "location": null,
+    "category": "fencing",
+    "serviceLabel": "Fencing & Exterior Work",
+    "measurement": null,
+    "summary": "Existing fence repaired and refinished rather than replaced.",
+    "scope": ["Fence refurbishment", "Fence staining"],
+    "featured": true,
+    "images": [],
+    "beforeAfter": null,
+    "detailsNeeded": [
+      "Before and after photos, which this job is ideal for",
+      "Location",
+      "Linear footage, if known"
+    ]
+  },
+  {
+    "id": "bandera-concrete-slab",
+    "title": "Concrete Slab",
+    "location": "Bandera, TX",
+    "category": "concrete",
+    "serviceLabel": "Concrete",
+    "measurement": "Approx. 600 sq. ft.",
+    "summary": "A poured and finished slab of roughly 600 square feet in Bandera.",
+    "scope": ["Site preparation", "Reinforcement", "Concrete placement", "Concrete finishing"],
+    "featured": true,
+    "images": [],
+    "beforeAfter": null,
+    "detailsNeeded": ["Photos", "What the slab was for, such as a shop, addition, or patio"]
+  },
+  {
+    "id": "concrete-2000-sqft",
+    "title": "Concrete Project",
+    "location": null,
+    "category": "concrete",
+    "serviceLabel": "Concrete",
+    "measurement": "Approx. 2,000 sq. ft.",
+    "summary": "A concrete project of roughly 2,000 square feet.",
+    "scope": ["Site preparation", "Concrete placement", "Concrete finishing"],
+    "featured": true,
+    "images": [],
+    "beforeAfter": null,
+    "detailsNeeded": [
+      "Photos",
+      "Location",
+      "What the pour was, such as a driveway, shop slab, or commercial pad. This is the largest documented job and is worth leading with."
+    ]
+  },
+  {
+    "id": "pool-removal-backfill-grading",
+    "title": "Pool Removal, Backfill and Grading",
+    "location": null,
+    "category": "demolition",
+    "serviceLabel": "Demolition & Removal",
+    "measurement": null,
+    "summary": "An existing pool removed, the void backfilled, and the yard graded back out.",
+    "scope": ["Pool demolition", "Backfill", "Grading", "Site cleanup"],
+    "featured": true,
+    "images": [],
+    "beforeAfter": null,
+    "detailsNeeded": [
+      "Before and after photos, which sell this service better than any description",
+      "Location"
+    ]
+  },
+  {
+    "id": "fair-oaks-king-ranch-fence",
+    "title": "King Ranch-Style Fence with Stucco Columns",
+    "location": "Fair Oaks, TX",
+    "category": "fencing",
+    "serviceLabel": "Fencing & Exterior Work",
+    "measurement": null,
+    "summary": "A King Ranch-style fence with custom stucco columns in Fair Oaks.",
+    "scope": ["King Ranch-style fencing", "Custom columns", "Entry sections"],
+    "featured": true,
+    "images": [],
+    "beforeAfter": null,
+    "detailsNeeded": [
+      "Photos. This is the most visually distinctive job on the list and should lead the fencing section.",
+      "Linear footage and column count, if known"
+    ]
+  },
+  {
+    "id": "lot-clearing-site-prep",
+    "title": "Lot Clearing and Site Prep",
+    "location": null,
+    "category": "excavation",
+    "serviceLabel": "Excavation & Site Work",
+    "measurement": "Approx. 5,000 sq. ft.",
+    "summary": "Roughly 5,000 square feet cleared and prepped for construction.",
+    "scope": ["Land clearing", "Lot clearing", "Site preparation", "Grading"],
+    "featured": true,
+    "images": [],
+    "beforeAfter": null,
+    "detailsNeeded": ["Before and after photos", "Location", "What was built afterward, if he knows"]
+  },
+  {
+    "id": "hauling-material-delivery",
+    "title": "Hauling and Material Delivery",
+    "location": null,
+    "category": "hauling",
+    "serviceLabel": "Hauling & Material Services",
+    "measurement": null,
+    "summary": "Material delivery and haul-off using dump trailer and tandem dump truck.",
+    "scope": ["Dirt delivery", "Base delivery", "Gravel delivery", "Construction debris haul-off"],
+    "featured": false,
+    "images": [],
+    "beforeAfter": null,
+    "detailsNeeded": [
+      "Photos of the truck and trailer loaded. Equipment photos are the strongest credibility signal on the whole site.",
+      "Whether he wants to publish material pricing or delivery radius"
+    ]
+  }
+]

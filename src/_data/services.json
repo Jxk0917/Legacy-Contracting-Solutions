@@ -1,0 +1,90 @@
+[
+  {
+    "id": "excavation",
+    "title": "Excavation & Site Work",
+    "lead": "Digging, moving, and shaping ground so the next trade can start on solid, level work.",
+    "items": [
+      "Pool excavation",
+      "Pool removal",
+      "Site preparation",
+      "Skid-steer work",
+      "Grading",
+      "Leveling",
+      "Backfill",
+      "Land clearing",
+      "Lot clearing"
+    ],
+    "customers": ["Pool builders", "Homeowners", "Contractors"],
+    "image": null,
+    "imageAlt": "Excavation work on a San Antonio area jobsite"
+  },
+  {
+    "id": "concrete",
+    "title": "Concrete",
+    "lead": "Flatwork from prep through finish, sized for a patio or for a shop slab.",
+    "items": [
+      "Concrete slabs",
+      "Driveways",
+      "Patios",
+      "Additions",
+      "Shop slabs",
+      "Custom concrete projects",
+      "Reinforcement",
+      "Site preparation",
+      "Concrete placement",
+      "Concrete finishing"
+    ],
+    "customers": ["Homeowners", "Contractors", "Commercial clients"],
+    "image": null,
+    "imageAlt": "Finished concrete slab poured by Legacy Contracting Solutions"
+  },
+  {
+    "id": "fencing",
+    "title": "Fencing & Exterior Work",
+    "lead": "New fence lines, entry work, and refinishing on fence that is worth keeping.",
+    "items": [
+      "Fence installation",
+      "King Ranch-style fencing",
+      "Fence refurbishment",
+      "Fence staining",
+      "Gates",
+      "Entry sections",
+      "Custom columns"
+    ],
+    "customers": ["Homeowners", "Contractors"],
+    "image": null,
+    "imageAlt": "King Ranch-style fence with custom columns"
+  },
+  {
+    "id": "hauling",
+    "title": "Hauling & Material Services",
+    "lead": "Material in, debris out, with the trailers and trucks to do both.",
+    "items": [
+      "Dirt delivery",
+      "Base delivery",
+      "Gravel delivery",
+      "Construction debris haul-off",
+      "Dump trailer services",
+      "Tandem dump truck services",
+      "Equipment hauling",
+      "Jobsite cleanup"
+    ],
+    "customers": ["Contractors", "Landscapers", "Homeowners", "Commercial clients"],
+    "image": null,
+    "imageAlt": "Dump trailer loaded for material delivery"
+  },
+  {
+    "id": "demolition",
+    "title": "Demolition & Removal",
+    "lead": "Taking structures and old pools out, then leaving the lot clean and ready.",
+    "items": [
+      "Pool demolition",
+      "Debris removal",
+      "Site cleanup",
+      "Demolition and removal work"
+    ],
+    "customers": ["Homeowners", "Contractors", "Commercial clients"],
+    "image": null,
+    "imageAlt": "Pool demolition and removal in progress"
+  }
+]

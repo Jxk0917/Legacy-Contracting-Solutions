@@ -1,0 +1,40 @@
+{
+  "name": "Legacy Contracting Solutions",
+  "legalName": "Legacy Contracting Solutions LLC",
+  "shortName": "Legacy",
+  "phone": "210-840-8533",
+  "region": "San Antonio, Texas and surrounding areas",
+  "regionShort": "San Antonio, TX",
+
+  "tagline": "Setting the Standards of Quality and Trust.",
+  "motto": "Built from the ground up.",
+  "processLine": "Quote. Approve. Build. It's that simple.",
+
+  "cta": {
+    "primary": "Call for a Free Estimate",
+    "primaryShort": "Call Now",
+    "secondary": "Request a Quote",
+    "secondaryShort": "Get a Quote",
+    "work": "View Our Work"
+  },
+
+  "nav": [
+    { "label": "Home", "url": "/" },
+    { "label": "Services", "url": "/services/" },
+    { "label": "Projects", "url": "/projects/" },
+    { "label": "About", "url": "/about/" },
+    { "label": "Contact", "url": "/contact/" }
+  ],
+
+  "_unknown": {
+    "note": "Confirm with owner before publishing. Nothing here is rendered while null.",
+    "email": null,
+    "address": null,
+    "hours": null,
+    "instagram": null,
+    "facebook": null,
+    "licensed": null,
+    "insured": null,
+    "yearsInBusiness": null
+  }
+}

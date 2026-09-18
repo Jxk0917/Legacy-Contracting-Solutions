@@ -1,0 +1,15 @@
+{
+  "name": "legacy-contracting-solutions",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Demo website for Legacy Contracting Solutions LLC - San Antonio, TX. Eleventy static build.",
+  "scripts": {
+    "start": "eleventy --serve --port=8080",
+    "build": "eleventy",
+    "clean": "node -e \"import('node:fs').then(fs=>fs.rmSync('_site',{recursive:true,force:true}))\""
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}
