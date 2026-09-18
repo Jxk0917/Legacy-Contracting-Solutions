@@ -2,7 +2,8 @@
 
 Legacy Contracting Solutions LLC - demo website
 
-Status: scaffold complete, build blocked on reference assets.
+Status: all five pages built and rendering. Waiting on project photography and
+the official logo file.
 
 ---
 
@@ -139,26 +140,33 @@ where the phone number is the single object in the section.
 
 ### Color
 
-Provisional. Sampled from the real logo the moment it lands in
-`assets/reference/brand/`, and these values are replaced rather than defended.
+Built from the official logo, which is navy, steel blue, white and black. The
+brief asked for construction yellow as the accent with blue only as a maybe.
+The real brand is the reverse, so the system is blue and yellow is demoted to
+a single job.
 
-| Token | Provisional | Role |
+| Token | Value | Role |
 |---|---|---|
-| `--ink` | `#15181C` | Page dark surfaces, header, footer, CTA bands |
-| `--graphite` | `#22272D` | Raised surface on dark, borders on dark |
-| `--steel` | `#6E757D` | Muted gray, secondary text on light |
-| `--paper` | `#F4F5F3` | Off-white page surface |
-| `--hi-vis` | `#FFC72C` | The single accent |
+| `--ink` | `#0f1620` | Deepest surface. Footer, area strip, featured band |
+| `--navy` | `#1b2739` | Brand navy. Header, hero, CTA bands |
+| `--navy-2` | `#26364d` | Raised surface on dark |
+| `--steel` | `#7fa8c9` | Logo blue. Section detail, meta text on dark |
+| `--steel-dim` | `#5c7f9e` | Muted blue on light |
+| `--paper` | `#f2f5f8` | Cool off-white page surface |
+| `--paper-2` | `#e6ecf2` | Process band |
+| `--hi-vis` | `#ffc72c` | Accent. Calls to action and focus rings only |
 
-One accent, locked site-wide. Yellow appears on primary CTAs, focus rings,
-active nav, hairline accents and hover states. Nothing else is yellow.
+Yellow is not in the logo, so it is used only where high-visibility contrast
+does real work: the call button, the focus ring, the rule under the hero and
+CTA bands, and the bullet on the area strip. Nothing else is yellow. The
+primary button is `--hi-vis` with `--ink` text, about 11:1.
 
-Primary button is `--hi-vis` background with `--ink` text, which measures about
-11:1 and clears AA comfortably. Yellow text on dark is never used for body
-copy, only for small accents at large weight.
+The off-white is cooled toward the blue rather than warmed, which keeps the
+site out of the rustic-western register the brief rules out.
 
-The dark is cool graphite rather than warm near-black, which keeps the site
-away from the rustic-western register the brief rules out.
+The logo also carries "SINCE 2024", which is a real and ownable fact and is
+used in the header lockup and the footer. It also means the site never leans
+on tenure. Capability and equipment carry the credibility instead.
 
 ### Type
 

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+
+  <link rel="canonical" href="{{ page.url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1b2739">
+
+  <link rel="preload" href="/assets/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/site.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "{{ site.legalName }}",
+    "telephone": "{{ site.phone }}",
+    "areaServed": [{% for a in areas.documented %}"{{ a }}, TX"{% if not loop.last %}, {% endif %}{% endfor %}],
+    "address": { "@type": "PostalAddress", "addressLocality": "San Antonio", "addressRegion": "TX", "addressCountry": "US" },
+    "foundingDate": "{{ site.since }}"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  {% include "partials/header.njk" %}
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  {% include "partials/footer.njk" %}
+  {% include "partials/call-bar.njk" %}
+
+  <script src="/assets/js/nav.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+---
+layout: layouts/base.njk
+title: "Contact | Free Estimate | Legacy Contracting Solutions | 210-840-8533"
+description: "Call 210-840-8533 for a free estimate on excavation, concrete, fencing, hauling or demolition in San Antonio, Boerne, Bandera and Fair Oaks. Or send project details for a quote."
+permalink: /contact/
+---
+
+<div class="phead">
+  <div class="wrap">
+    <h1>Get a Free Estimate</h1>
+    <p>
+      The fastest way to get a price is to call. If it is easier to send the
+      details, use the form and we will call you back.
+    </p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="contact__grid">
+
+      <div class="callout">
+        <h2>Call Legacy</h2>
+        <p>Talk through the job and get a price.</p>
+        <a class="callout__tel" href="{{ site.phone | telHref }}">{{ site.phone }}</a>
+
+        <ul class="callout__list">
+          <li>Free estimates</li>
+          <li>Homeowners, contractors, pool builders and commercial clients</li>
+          <li>{{ site.region }}</li>
+        </ul>
+
+        {#
+          Business hours and email address are not confirmed. Nothing is invented
+          here. Add them to src/_data/site.json once the owner provides them.
+        #}
+      </div>
+
+      <div>
+        <h2 style="font-size: var(--t-xl); margin-bottom: 1.2rem;">Request a Quote</h2>
+
+        {# No backend is wired up and no email address exists yet. #}
+        {% if site.demoNotes %}
+          <p class="form__note">
+            Demo note: this form is not connected yet. It needs an email address or
+            a form service before the site goes live.
+          </p>
+        {% endif %}
+
+        <form action="#" method="post" novalidate>
+          <div class="field--row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <span class="hint" id="email-hint">Optional if you would rather be called.</span>
+            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-hint">
+          </div>
+
+          <div class="field--row">
+            <div class="field">
+              <label for="type">Project type</label>
+              <select id="type" name="type">
+                <option value="">Select one</option>
+                {% for s in services %}
+                  <option value="{{ s.id }}">{{ s.title }}</option>
+                {% endfor %}
+                <option value="other">Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="location">Project location</label>
+              <span class="hint" id="loc-hint">City or neighborhood.</span>
+              <input type="text" id="location" name="location" aria-describedby="loc-hint">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="details">Project details</label>
+            <span class="hint" id="details-hint">Size, timing and anything already on site.</span>
+            <textarea id="details" name="details" aria-describedby="details-hint"></textarea>
+          </div>
+
+          <fieldset>
+            <legend>Preferred contact method</legend>
+            <div class="radios">
+              <label><input type="radio" name="contact" value="call" checked> Phone call</label>
+              <label><input type="radio" name="contact" value="text"> Text</label>
+              <label><input type="radio" name="contact" value="email"> Email</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="photos">Project photos</label>
+            <span class="hint" id="photos-hint">Optional. Photos usually get you a more accurate price.</span>
+            <input type="file" id="photos" name="photos" accept="image/*" multiple aria-describedby="photos-hint">
+          </div>
+
+          <button class="btn btn--quote" type="submit">{{ site.cta.secondary }}</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>

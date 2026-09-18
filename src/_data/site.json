@@ -10,6 +10,17 @@
   "motto": "Built from the ground up.",
   "processLine": "Quote. Approve. Build. It's that simple.",
 
+  "since": "2024",
+
+  "_comment_demoNotes": "Shows the amber 'still needed' notes on Projects, the form stub warning, and the footer demo line. Set false for a clean walkthrough, true when working through content gaps with the owner.",
+  "demoNotes": true,
+
+  "logo": {
+    "_note": "Set src once the official logo file is saved to src/assets/img/brand/. Until then the header renders a typographic lockup. The logo is used as-is and never redrawn.",
+    "src": null,
+    "alt": "Legacy Contracting Solutions LLC"
+  },
+
   "cta": {
     "primary": "Call for a Free Estimate",
     "primaryShort": "Call Now",

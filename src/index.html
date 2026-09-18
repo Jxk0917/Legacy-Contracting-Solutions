@@ -1,0 +1,232 @@
+---
+layout: layouts/base.njk
+title: "Legacy Contracting Solutions | Excavation, Concrete & Fencing in San Antonio, TX"
+description: "Excavation, concrete, fencing, hauling and site work for homeowners, contractors and commercial projects across San Antonio, Boerne, Bandera and Fair Oaks. Call 210-840-8533 for a free estimate."
+---
+
+{# ---------- Hero ---------- #}
+<section class="hero">
+  <div class="hero__in">
+
+    <div class="hero__copy">
+      <h1>Built From the Ground Up.</h1>
+      <p class="hero__lede">
+        Excavation, concrete, fencing, hauling and site work for homeowners,
+        contractors and commercial projects across San Antonio.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn--call" href="{{ site.phone | telHref }}">{{ site.cta.primary }}</a>
+        <a class="btn btn--ghost" href="/projects/">{{ site.cta.work }}</a>
+      </div>
+    </div>
+
+    <div class="hero__media">
+      {% set phClass = "" %}
+      {% set phLabel = "Hero. One wide shot of equipment working on site, framed so the headline clears the left third." %}
+      {% set phFile = "hero-jobsite.jpg" %}
+      {% include "partials/ph.njk" %}
+    </div>
+
+  </div>
+</section>
+
+{# ---------- Service area strip ---------- #}
+<div class="strip">
+  <div class="wrap">
+    <ul>
+      {% for a in areas.documented %}<li>{{ a }}</li>{% endfor %}
+      <li class="strip__more">{{ areas.catchAll }}</li>
+    </ul>
+  </div>
+</div>
+
+{# ---------- Services. Five groups, five cells. ---------- #}
+<section id="services">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>What We Do</h2>
+      <p>
+        Five lines of work, handled by the same crew. Most jobs touch more than one.
+      </p>
+    </div>
+
+    <div class="svcs">
+      {% for s in services %}
+        <a class="svc {% if loop.first %}svc--lead{% endif %}" href="/services/#{{ s.id }}">
+          <h3 class="svc__title">{{ s.title }}</h3>
+          <p class="svc__lead">{{ s.lead }}</p>
+          <ul class="svc__items">
+            {% for item in s.items %}<li>{{ item }}</li>{% endfor %}
+          </ul>
+          {% if loop.first %}
+            <div class="svc__media">
+              {% set phClass = "ph--16x9" %}
+              {% set phLabel = "Skid steer or excavator mid dig." %}
+              {% set phFile = "services/excavation.jpg" %}
+              {% include "partials/ph.njk" %}
+            </div>
+          {% endif %}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ---------- Featured project. Measurement as display type. ---------- #}
+{% set feat = projects | findBy("id", "concrete-2000-sqft") %}
+<section class="feature">
+  <div class="feature__grid">
+
+    <div class="feature__media">
+      {% set phClass = "" %}
+      {% set phLabel = "Largest documented pour. Wide shot of the finished slab." %}
+      {% set phFile = "projects/concrete-2000-sqft.jpg" %}
+      {% include "partials/ph.njk" %}
+    </div>
+
+    <div class="feature__body">
+      <p class="measure">
+        {{ feat.measureValue }}<small>{{ feat.measureUnit }}</small>
+      </p>
+      <h2>{{ feat.title }}</h2>
+      <p class="feature__loc">{{ feat.serviceLabel }}</p>
+      <ul class="feature__scope">
+        {% for step in feat.scope %}<li>{{ step }}</li>{% endfor %}
+      </ul>
+      <div class="btn-row" style="margin-top: 1.8rem;">
+        <a class="btn btn--ghost" href="/projects/">{{ site.cta.work }}</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{# ---------- Why Legacy ---------- #}
+<section>
+  <div class="wrap">
+    <div class="s-head">
+      <h2>Why Legacy</h2>
+    </div>
+
+    <div class="why">
+      <div class="why__item">
+        <h3>Equipment on site</h3>
+        <p>
+          Skid steer work, dump trailers and tandem dump trucks are part of the
+          business, so digging, hauling and cleanup stay with one crew instead of
+          being split between three.
+        </p>
+      </div>
+      <div class="why__item">
+        <h3>Start to finish</h3>
+        <p>
+          Site prep, the work itself, and the haul off afterward. One number to
+          call for all three.
+        </p>
+      </div>
+      <div class="why__item">
+        <h3>Homeowners and contractors</h3>
+        <p>
+          The same crew works for homeowners, pool builders, landscapers and
+          commercial clients.
+        </p>
+      </div>
+      <div class="why__item">
+        <h3>Local work</h3>
+        <p>
+          Projects documented in San Antonio, Boerne, Bandera and Fair Oaks.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ---------- Process. His own words are the labels. ---------- #}
+<section class="proc">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>{{ site.processLine }}</h2>
+    </div>
+
+    <div class="proc__grid">
+      <div class="proc__step">
+        <h3>Quote</h3>
+        <p>Call with the details or send photos. You get a price for the work.</p>
+      </div>
+      <div class="proc__step">
+        <h3>Approve</h3>
+        <p>Scope and price are agreed before anything starts. No surprises on site.</p>
+      </div>
+      <div class="proc__step">
+        <h3>Build</h3>
+        <p>We handle the rest, including hauling off what is left behind.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ---------- Reviews. Built, deliberately unpopulated. ---------- #}
+<section>
+  <div class="wrap">
+    <div class="s-head">
+      <h2>What Customers Say</h2>
+    </div>
+
+    {#
+      Deliberately empty. No review, rating or name is invented anywhere on this
+      site. Replace this block with real quotes once the owner supplies them.
+    #}
+    <div class="reviews__empty">
+      <h3>This section is built and waiting on real reviews.</h3>
+      <p>
+        Nothing here is written on your behalf. Send over customers who would
+        vouch for the work and their words go in this space with their name
+        attached. Three short quotes is enough.
+      </p>
+    </div>
+  </div>
+</section>
+
+{# ---------- Service area ---------- #}
+<section>
+  <div class="wrap">
+    <div class="s-head">
+      <h2>Where We Work</h2>
+      <p>San Antonio and the surrounding Hill Country.</p>
+    </div>
+
+    <div class="areas__grid">
+      <div class="area">
+        <h3>San Antonio</h3>
+        <p>Primary service area.</p>
+      </div>
+      <div class="area">
+        <h3>Boerne</h3>
+        <p>Pool excavation.</p>
+      </div>
+      <div class="area">
+        <h3>Bandera</h3>
+        <p>Concrete slab work.</p>
+      </div>
+      <div class="area">
+        <h3>Fair Oaks</h3>
+        <p>Fencing and custom columns.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ---------- Final CTA ---------- #}
+<section class="cta">
+  <div class="wrap">
+    <h2>Tell Us About the Project</h2>
+    <p>
+      Most jobs start with a phone call. Describe the work and you get a price
+      for it, at no cost.
+    </p>
+    <a class="cta__tel" href="{{ site.phone | telHref }}">{{ site.phone }}</a>
+    <div class="btn-row">
+      <a class="btn btn--call" href="/contact/">{{ site.cta.secondary }}</a>
+    </div>
+  </div>
+</section>

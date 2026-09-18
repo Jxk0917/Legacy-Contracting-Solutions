@@ -14,6 +14,11 @@ export default function (eleventyConfig) {
     (projects || []).filter((p) => p.category === categoryId)
   );
 
+  // Single record by key. Nunjucks has no usable selectattr, so this is explicit.
+  eleventyConfig.addFilter("findBy", (items, key, value) =>
+    (items || []).find((item) => item[key] === value)
+  );
+
   eleventyConfig.addFilter("year", () => new Date().getFullYear());
 
   return {

@@ -1,0 +1,69 @@
+---
+layout: layouts/base.njk
+title: "Services | Excavation, Concrete, Fencing & Hauling | Legacy Contracting Solutions"
+description: "Excavation and site work, concrete, fencing, hauling and material delivery, and demolition and removal across San Antonio, Boerne, Bandera and Fair Oaks."
+permalink: /services/
+---
+
+<div class="phead">
+  <div class="wrap">
+    <h1>Services</h1>
+    <p>
+      Five lines of work, handled by the same crew. Most jobs touch more than one,
+      which is usually the reason to call once instead of three times.
+    </p>
+  </div>
+</div>
+
+{% for s in services %}
+  <section class="sblock" id="{{ s.id }}">
+    <div class="wrap">
+      <div class="sblock__grid">
+
+        <div>
+          <h2>{{ s.title }}</h2>
+          <p class="sblock__lead">{{ s.lead }}</p>
+
+          <ul class="sblock__list">
+            {% for item in s.items %}<li>{{ item }}</li>{% endfor %}
+          </ul>
+
+          <p class="sblock__who">
+            <strong>Who this is for:</strong>
+            {% for c in s.customers %}{{ c }}{% if not loop.last %}, {% endif %}{% endfor %}.
+          </p>
+
+          <div class="btn-row" style="margin-top: 1.6rem;">
+            <a class="btn btn--call" href="{{ site.phone | telHref }}">{{ site.cta.primary }}</a>
+            {% set related = projects | byCategory(s.id) %}
+            {% if related | length %}
+              <a class="btn btn--quote" href="/projects/#{{ s.id }}">{{ site.cta.work }}</a>
+            {% endif %}
+          </div>
+        </div>
+
+        <div>
+          {% set phClass = "ph--4x3 ph--light" %}
+          {% set phLabel = s.imageAlt + "." %}
+          {% set phFile = "services/" + s.id + ".jpg" %}
+          {% include "partials/ph.njk" %}
+        </div>
+
+      </div>
+    </div>
+  </section>
+{% endfor %}
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Not Sure Which One You Need?</h2>
+    <p>
+      Describe the job on the phone. If it is work we do, you get a price. If it
+      is not, we will say so.
+    </p>
+    <a class="cta__tel" href="{{ site.phone | telHref }}">{{ site.phone }}</a>
+    <div class="btn-row">
+      <a class="btn btn--call" href="/contact/">{{ site.cta.secondary }}</a>
+    </div>
+  </div>
+</section>

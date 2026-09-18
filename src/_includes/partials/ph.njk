@@ -1,0 +1,12 @@
+{#
+  Labelled placeholder slot.
+  Renders a deliberate empty frame naming the photo that belongs there, so a
+  missing image reads as missing rather than as a broken layout.
+  Params: phLabel, phFile, phClass (optional aspect / tone modifiers)
+#}
+<div class="ph {{ phClass }}" role="img" aria-label="Photo placeholder. {{ phLabel }}">
+  <p class="ph__tag">
+    {{ phLabel }}
+    <code>src/assets/img/{{ phFile }}</code>
+  </p>
+</div>

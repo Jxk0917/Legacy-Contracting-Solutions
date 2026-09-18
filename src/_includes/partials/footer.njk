@@ -1,0 +1,45 @@
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+
+      <div>
+        <h2>{{ site.legalName }}</h2>
+        <p style="color: var(--on-dark-dim); max-width: 34ch;">{{ site.tagline }}</p>
+        <a class="ftr__tel" href="{{ site.phone | telHref }}">{{ site.phone }}</a>
+        <p style="margin-top: 0.6rem;">{{ site.region }}</p>
+      </div>
+
+      <div>
+        <h2>Services</h2>
+        <ul>
+          {% for s in services %}
+            <li><a href="/services/#{{ s.id }}">{{ s.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <h2>Service Area</h2>
+        <ul>
+          {% for a in areas.documented %}
+            <li>{{ a }}, TX</li>
+          {% endfor %}
+          <li>{{ areas.catchAll | capitalize }}</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="ftr__legal">
+      <span>&copy; {{ '' | year }} {{ site.legalName }}. Since {{ site.since }}.</span>
+      <span><a href="/contact/">{{ site.cta.secondary }}</a></span>
+    </div>
+
+    {% if site.demoNotes %}
+      <p class="ftr__note">
+        Demo site built by ALVSolutions. Email address, business hours and service
+        area still to be confirmed with the owner.
+      </p>
+    {% endif %}
+  </div>
+</footer>

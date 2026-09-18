@@ -1,0 +1,85 @@
+---
+layout: layouts/base.njk
+title: "Projects | Recent Work in San Antonio, Boerne, Bandera & Fair Oaks"
+description: "Pool excavation, concrete slabs, King Ranch-style fencing, lot clearing and pool removal. Recent Legacy Contracting Solutions projects across the San Antonio area."
+permalink: /projects/
+---
+
+<div class="phead">
+  <div class="wrap">
+    <h1>Projects</h1>
+    <p>
+      Work completed across San Antonio, Boerne, Bandera and Fair Oaks. Sizes are
+      approximate and taken from the job itself.
+    </p>
+  </div>
+</div>
+
+{% for s in services %}
+  {% set group = projects | byCategory(s.id) %}
+  {% if group | length %}
+    <section id="{{ s.id }}">
+      <div class="wrap">
+        <div class="s-head">
+          <h2>{{ s.title }}</h2>
+        </div>
+
+        <div class="pgrid">
+          {% for p in group %}
+            <article class="pcard{% if group | length == 1 %} pcard--wide{% endif %}">
+
+              <div class="pcard__media">
+                {% set phClass = "ph--4x3 ph--light" %}
+                {% set phLabel = p.title + (", " + p.location if p.location else "") + "." %}
+                {% set phFile = "projects/" + p.id + ".jpg" %}
+                {% include "partials/ph.njk" %}
+              </div>
+
+              <div class="pcard__body">
+                {% if p.measureValue %}
+                  <p class="pcard__measure">{{ p.measureValue }}<small>{{ p.measureUnit }}</small></p>
+                {% endif %}
+
+                <h3>{{ p.title }}</h3>
+                <p class="pcard__meta">
+                  {% if p.location %}{{ p.location }}{% else %}Location to confirm{% endif %}
+                </p>
+                <p class="pcard__sum">{{ p.summary }}</p>
+
+                <ul class="pcard__scope">
+                  {% for step in p.scope %}<li>{{ step }}</li>{% endfor %}
+                </ul>
+
+                {#
+                  Content-gap notes for the owner meeting. Switch site.demoNotes
+                  to false in src/_data/site.json to hide every one of them.
+                #}
+                {% if site.demoNotes and p.detailsNeeded | length %}
+                  <div class="pcard__todo">
+                    <strong>Still needed:</strong>
+                    {% for d in p.detailsNeeded %}{{ d }}{% if not loop.last %}. {% endif %}{% endfor %}
+                  </div>
+                {% endif %}
+              </div>
+
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
+{% endfor %}
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Want Something Like This Done?</h2>
+    <p>
+      Tell us the size of the job and where it is. You get a price for the work,
+      at no cost.
+    </p>
+    <a class="cta__tel" href="{{ site.phone | telHref }}">{{ site.phone }}</a>
+    <div class="btn-row">
+      <a class="btn btn--call" href="/contact/">{{ site.cta.secondary }}</a>
+    </div>
+  </div>
+</section>
