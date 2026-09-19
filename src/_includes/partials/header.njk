@@ -8,9 +8,9 @@
       set alongside it in the display face. The logo is never redrawn.
       The image is decorative here because the adjacent text carries the name.
     #}
-    <a class="hdr__logo" href="/">
+    <a class="hdr__logo" href="{{ '/' | url }}">
       {% if site.logo.src %}
-        <img src="{{ site.logo.src }}" alt="" width="{{ site.logo.width }}" height="{{ site.logo.height }}">
+        <img src="{{ site.logo.src | url }}" alt="" width="{{ site.logo.width }}" height="{{ site.logo.height }}">
       {% endif %}
       <span class="lockup">
         <span class="lockup__name">{{ site.name }}</span>
@@ -22,7 +22,7 @@
       <ul>
         {% for item in site.nav %}
           <li>
-            <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+            <a href="{{ item.url | url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
           </li>
         {% endfor %}
       </ul>
@@ -40,7 +40,7 @@
   <div class="mnav" id="mnav" hidden>
     <nav aria-label="Main, mobile">
       {% for item in site.nav %}
-        <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+        <a href="{{ item.url | url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
       {% endfor %}
     </nav>
     <a class="btn btn--call" href="{{ site.phone | telHref }}">{{ site.cta.primary }}</a>

@@ -4,7 +4,7 @@
 
       <div class="ftr__brand">
         {% if site.logo.src %}
-          <img src="{{ site.logo.src }}" alt="{{ site.logo.alt }}" width="{{ site.logo.width }}" height="{{ site.logo.height }}" loading="lazy" decoding="async">
+          <img src="{{ site.logo.src | url }}" alt="{{ site.logo.alt }}" width="{{ site.logo.width }}" height="{{ site.logo.height }}" loading="lazy" decoding="async">
         {% endif %}
         <h2>{{ site.legalName }}</h2>
         <p class="ftr__tagline">{{ site.tagline }}</p>
@@ -16,7 +16,7 @@
         <h2>Services</h2>
         <ul>
           {% for s in services %}
-            <li><a href="/services/#{{ s.id }}">{{ s.title }}</a></li>
+            <li><a href="{{ '/services/' | url }}#{{ s.id }}">{{ s.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
@@ -35,7 +35,7 @@
 
     <div class="ftr__legal">
       <span>&copy; {{ '' | year }} {{ site.legalName }}. Since {{ site.since }}.</span>
-      <span><a href="/contact/">{{ site.cta.secondary }}</a></span>
+      <span><a href="{{ '/contact/' | url }}">{{ site.cta.secondary }}</a></span>
     </div>
 
     {% if site.demoNotes %}

@@ -10,6 +10,18 @@ if (existsSync(CREDITS_PATH)) {
   }
 }
 
+// Set by CI when this builds as a GitHub Pages *project* site (served under
+// /<repo-name>/ rather than at the domain root). Empty locally, so `npm start`
+// and `npm run build` keep working unprefixed unless PATH_PREFIX is set.
+const PATH_PREFIX = process.env.PATH_PREFIX || "/";
+
+// Joins the configured prefix onto a root-relative path, for URLs built in
+// plain JS (the photo shortcode below) rather than through Nunjucks, which
+// gets Eleventy's own `url` filter for this automatically.
+function withPrefix(p) {
+  return `${PATH_PREFIX.replace(/\/$/, "")}${p}`;
+}
+
 export default function (eleventyConfig) {
   // Static assets ship as-is. src/assets/... is served at /assets/...
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
@@ -27,12 +39,12 @@ export default function (eleventyConfig) {
       }
       const mid = widths[Math.min(1, widths.length - 1)];
       const dim = sizeIndex.get(`${name}-${mid}`) || sizeIndex.get(`${name}-${widths[0]}`);
-      const srcset = (ext) => widths.map((w) => `/assets/img/${name}-${w}.${ext} ${w}w`).join(", ");
+      const srcset = (ext) => widths.map((w) => `${withPrefix(`/assets/img/${name}-${w}.${ext}`)} ${w}w`).join(", ");
 
       return `<picture class="photo${cls ? " " + cls : ""}">
 <source type="image/avif" srcset="${srcset("avif")}" sizes="${sizes}">
 <source type="image/webp" srcset="${srcset("webp")}" sizes="${sizes}">
-<img src="/assets/img/${name}-${mid}.jpg" srcset="${srcset("jpg")}" sizes="${sizes}" alt="${String(alt).replace(/"/g, "&quot;")}"${
+<img src="${withPrefix(`/assets/img/${name}-${mid}.jpg`)}" srcset="${srcset("jpg")}" sizes="${sizes}" alt="${String(alt).replace(/"/g, "&quot;")}"${
         dim ? ` width="${dim.w}" height="${dim.h}"` : ""
       } ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></picture>`;
     }
@@ -58,6 +70,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("year", () => new Date().getFullYear());
 
   return {
+    pathPrefix: PATH_PREFIX,
     dir: {
       input: "src",
       output: "_site",

@@ -12,14 +12,15 @@ description: "Excavation, concrete, fencing, hauling and site work for homeowner
     viewport would cut the machine out of frame, so narrow screens get a 4:5
     crop of the same photograph instead.
   #}
+  {% set heroBase = "/assets/img/hero/" | url %}
   <picture class="photo">
-    <source media="(max-width: 47.99rem)" type="image/avif" srcset="/assets/img/hero/site-work-tall-640.avif 640w, /assets/img/hero/site-work-tall-900.avif 900w" sizes="100vw">
-    <source media="(max-width: 47.99rem)" type="image/webp" srcset="/assets/img/hero/site-work-tall-640.webp 640w, /assets/img/hero/site-work-tall-900.webp 900w" sizes="100vw">
-    <source media="(max-width: 47.99rem)" type="image/jpeg" srcset="/assets/img/hero/site-work-tall-640.jpg 640w, /assets/img/hero/site-work-tall-900.jpg 900w" sizes="100vw">
-    <source type="image/avif" srcset="/assets/img/hero/site-work-wide-900.avif 900w, /assets/img/hero/site-work-wide-1400.avif 1400w, /assets/img/hero/site-work-wide-2000.avif 2000w" sizes="100vw">
-    <source type="image/webp" srcset="/assets/img/hero/site-work-wide-900.webp 900w, /assets/img/hero/site-work-wide-1400.webp 1400w, /assets/img/hero/site-work-wide-2000.webp 2000w" sizes="100vw">
-    <img src="/assets/img/hero/site-work-wide-1400.jpg"
-         srcset="/assets/img/hero/site-work-wide-900.jpg 900w, /assets/img/hero/site-work-wide-1400.jpg 1400w, /assets/img/hero/site-work-wide-2000.jpg 2000w"
+    <source media="(max-width: 47.99rem)" type="image/avif" srcset="{{ heroBase }}site-work-tall-640.avif 640w, {{ heroBase }}site-work-tall-900.avif 900w" sizes="100vw">
+    <source media="(max-width: 47.99rem)" type="image/webp" srcset="{{ heroBase }}site-work-tall-640.webp 640w, {{ heroBase }}site-work-tall-900.webp 900w" sizes="100vw">
+    <source media="(max-width: 47.99rem)" type="image/jpeg" srcset="{{ heroBase }}site-work-tall-640.jpg 640w, {{ heroBase }}site-work-tall-900.jpg 900w" sizes="100vw">
+    <source type="image/avif" srcset="{{ heroBase }}site-work-wide-900.avif 900w, {{ heroBase }}site-work-wide-1400.avif 1400w, {{ heroBase }}site-work-wide-2000.avif 2000w" sizes="100vw">
+    <source type="image/webp" srcset="{{ heroBase }}site-work-wide-900.webp 900w, {{ heroBase }}site-work-wide-1400.webp 1400w, {{ heroBase }}site-work-wide-2000.webp 2000w" sizes="100vw">
+    <img src="{{ heroBase }}site-work-wide-1400.jpg"
+         srcset="{{ heroBase }}site-work-wide-900.jpg 900w, {{ heroBase }}site-work-wide-1400.jpg 1400w, {{ heroBase }}site-work-wide-2000.jpg 2000w"
          sizes="100vw"
          alt="A tracked skid steer parked on freshly graded ground beside a mound of sand, on open land under a wide Texas sky."
          width="1400" height="788" fetchpriority="high" decoding="async">
@@ -32,7 +33,7 @@ description: "Excavation, concrete, fencing, hauling and site work for homeowner
     </p>
     <div class="btn-row">
       <a class="btn btn--call" href="{{ site.phone | telHref }}">{{ site.cta.primary }}</a>
-      <a class="btn btn--ghost" href="/projects/">{{ site.cta.work }}</a>
+      <a class="btn btn--ghost" href="{{ '/projects/' | url }}">{{ site.cta.work }}</a>
     </div>
   </div>
 </section>
@@ -58,7 +59,7 @@ description: "Excavation, concrete, fencing, hauling and site work for homeowner
 
     <div class="lede-grid">
       {% set lead = services[0] %}
-      <a class="lede-lead" href="/services/#{{ lead.id }}">
+      <a class="lede-lead" href="{{ '/services/' | url }}#{{ lead.id }}">
         {% photo lead.image, lead.imageAlt, "(min-width: 62rem) 52vw, 100vw" %}
         <div class="lede-lead__cap">
           <h3>{{ lead.title }}</h3>
@@ -69,7 +70,7 @@ description: "Excavation, concrete, fencing, hauling and site work for homeowner
       <div class="lede-list">
         {% for s in services %}
           {% if not loop.first %}
-            <a class="lede-item" href="/services/#{{ s.id }}">
+            <a class="lede-item" href="{{ '/services/' | url }}#{{ s.id }}">
               <h3>{{ s.title }}</h3>
               <p>{{ s.lead }}</p>
             </a>
@@ -97,7 +98,7 @@ description: "Excavation, concrete, fencing, hauling and site work for homeowner
         {% for step in feat.scope %}<li>{{ step }}</li>{% endfor %}
       </ul>
       <div class="btn-row" style="margin-top: 1.8rem;">
-        <a class="btn btn--ghost" href="/projects/">{{ site.cta.work }}</a>
+        <a class="btn btn--ghost" href="{{ '/projects/' | url }}">{{ site.cta.work }}</a>
       </div>
     </div>
   </div>
@@ -115,7 +116,7 @@ description: "Excavation, concrete, fencing, hauling and site work for homeowner
       {% set shown = ["boerne-pool-excavation", "fair-oaks-king-ranch-fence", "lot-clearing-site-prep", "bandera-concrete-slab", "pool-removal-backfill-grading", "hauling-material-delivery"] %}
       {% for id in shown %}
         {% set p = projects | findBy("id", id) %}
-        <a class="work__item" href="/projects/#{{ p.id }}">
+        <a class="work__item" href="{{ '/projects/' | url }}#{{ p.id }}">
           {% photo p.images[0].file, p.images[0].alt, "(min-width: 48rem) 32vw, 100vw" %}
           <div class="work__cap">
             <h3>{{ p.title }}</h3>
@@ -201,7 +202,7 @@ description: "Excavation, concrete, fencing, hauling and site work for homeowner
     </p>
     <a class="cta__tel" href="{{ site.phone | telHref }}">{{ site.phone }}</a>
     <div class="btn-row">
-      <a class="btn btn--call" href="/contact/">{{ site.cta.secondary }}</a>
+      <a class="btn btn--call" href="{{ '/contact/' | url }}">{{ site.cta.secondary }}</a>
     </div>
   </div>
 </section>
