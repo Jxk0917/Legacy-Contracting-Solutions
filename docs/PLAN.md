@@ -2,8 +2,13 @@
 
 Legacy Contracting Solutions LLC - demo website
 
-Status: all five pages built and rendering. Waiting on project photography and
-the official logo file.
+Status: all five pages built and rendering. The palette below already
+anticipated the logo finding and was correct; it is now confirmed rather than
+inferred (see `CLAUDE.md`'s Color section, resolved 2026-09-18). Real project
+photography and the official logo are captured in `assets/reference/` -
+website (`current-site/`), Instagram (`instagram/`, including extracted video
+stills), logo and jobsite photos (`brand/`, `projects/`). See
+`docs/SOURCE-OF-TRUTH.md` for the consolidated facts pulled from all of it.
 
 ---
 
@@ -50,84 +55,82 @@ centered white headline, yellow button, gradient scrim; three identical service
 cards with line icons; a "Why Choose Us" row of four checkmark boxes; a
 01 / 02 / 03 process strip; a testimonial carousel.
 
-Four things changed as a result.
+Five things changed as a result.
 
-**Hero is asymmetric, not centered.** Copy holds the left, the photograph runs
-full-bleed behind and to the right. Centered hero copy over a dark photo is
-the single most common contractor-site treatment and carries no information
-about this specific company.
+**Hero copy sits bottom-left, not centered.** The photograph is full-bleed and
+the scrim is weighted to the bottom-left so the headline lands in open sky.
+Centered hero copy over a dark photo is the most common contractor-site
+treatment and says nothing about this particular company.
 
-**Services are five cells, not three cards.** There are five service groups,
-so the grid has exactly five cells: one large lead cell for excavation, which
-is the flagship capability, and four supporting cells. Photo-backed, not
-white boxes with icons. A three-card row would have meant either dropping two
-real services or padding to six.
+**Services are one photographic lead cell plus four rule-separated items**, not
+a row of identical cards. There are five service groups, so there are exactly
+five cells and no padding to reach six.
 
-**Process is verb-led, not numbered.** His own words are already the labels:
-Quote, Approve, Build. Adding "Step 01 / Step 02 / Step 03" on top of that
-would be decoration over content that is already sequential and already his.
+**The numbered process strip was cut entirely.** It was built around "Quote.
+Approve. Build. It's that simple.", which turned out not to be confirmed by any
+captured source. Rather than keep the section and reword it, the section went,
+and the phrase is parked in `site.json` as `processLineUnconfirmed` where
+nothing renders it. See `docs/OWNER-CONFIRMATION.md`.
 
-**Testimonials ship visibly empty.** There are no real reviews available, so
-the section is built and left unpopulated with a clear note, rather than
-filled with invented quotes. This is non-negotiable given the site is being
-shown to the business owner himself.
+**The four-box service area block was cut** and replaced by a single inline band
+of place names directly under the hero. Four boxes to hold four short town names
+was structure doing no work.
 
-Eyebrow budget: 10 sections, so 3 eyebrow labels maximum. Planned for 1.
+**Testimonials ship visibly empty.** There are no real reviews, so the section
+is built and left unpopulated with a note saying so, rather than filled with
+invented quotes. Non-negotiable given the site is shown to the owner himself.
+
+Eyebrow budget: 8 sections, so 3 tracked-caps labels maximum. Shipped with 1,
+the "Working in" label on the area band.
 
 ---
 
 ## Homepage structure
 
-Ten sections, six distinct layout families. No layout family repeats, and no
-three consecutive sections use an image-plus-text split.
+Eight sections, eight distinct layout families. No layout family repeats, and no
+two consecutive sections use the same image-plus-text arrangement.
 
 ```
 +--------------------------------------------------------------+
-|  LOGO        Home Services Projects About Contact  [CALL]    |  sticky, 68px
+|  LOGO  Home Services Projects About Contact   [210-840-8533] |  sticky, 73px
 +--------------------------------------------------------------+
 |                                                              |
-|   BUILT FROM THE          [ full-bleed jobsite photograph ]  |
-|   GROUND UP.                                                 |  HERO
-|                                                              |  asymmetric split
-|   Excavation, concrete, fencing and                          |
-|   hauling across San Antonio.                                |
-|                                                              |
+|      [ full-bleed photograph: skid steer on graded ground ]  |  HERO
+|                                                              |  full-bleed media
+|   BUILT FROM THE GROUND UP.                                  |  copy bottom-left
+|   Excavation, concrete, fencing and hauling ...              |
 |   [ Call for a Free Estimate ]  [ View Our Work ]            |
 +--------------------------------------------------------------+
-|  San Antonio / Boerne / Bandera / Fair Oaks                  |  rule strip
+|  WORKING IN  San Antonio  Boerne  Bandera  Fair Oaks         |  inline band
 +--------------------------------------------------------------+
-|  +----------------------+  +---------+  +---------+          |
-|  |                      |  | CONCRETE|  | FENCING |          |
-|  |  EXCAVATION          |  +---------+  +---------+          |  SERVICES
-|  |  & SITE WORK         |  +---------+  +---------+          |  5 cells, 5 items
-|  |                      |  | HAULING |  | DEMO    |          |
-|  +----------------------+  +---------+  +---------+          |
+|  +----------------------+   CONCRETE                         |
+|  |                      |   ---------------------------      |  WHAT WE DO
+|  |  [ photograph ]      |   FENCING & EXTERIOR WORK          |  photo lead cell
+|  |                      |   ---------------------------      |  + rule list
+|  +----------------------+   HAULING & MATERIAL SERVICES      |
+|  EXCAVATION & SITE WORK     ---------------------------      |
+|                             DEMOLITION & REMOVAL             |
 +--------------------------------------------------------------+
-|                                                              |
-|   [ photograph, full width ]                                 |  FEATURED PROJECT
-|                                                              |  full-bleed, single
-|   2,000            Concrete Project                          |
-|   SQ. FT.          Site prep, placement, finishing           |
+|                          |   2,000                           |
+|   [ photograph ]         |   SQ. FT.                         |  FEATURED PROJECT
+|                          |   Concrete Project                |  editorial split
+|                          |   Site prep, placement, finishing |
 +--------------------------------------------------------------+
-|   Equipment on site.                                         |
-|   ------------------------------------------------           |  WHY LEGACY
-|   Start to finish.                                           |  stacked statements
-|   ------------------------------------------------           |  hairlines, no boxes
-|   One call, one crew.                                        |
+|  [ photo ] [ photo ] [ photo ]                               |  RECENT WORK
+|  [ photo ] [ photo ] [ photo ]                               |  3-col gallery
 +--------------------------------------------------------------+
-|   Quote.            Approve.           Build.                |  PROCESS
-|   Tell us the job.  Price and scope.   We handle the rest.   |  3 col, verb-led
+|  Equipment on site.   | Skid steers, dump trailers ...       |
+|  ---------------------------------------------------------   |  WHY LEGACY
+|  Start to finish.     | Site prep, the work, the haul off    |  rule-divided prose
 +--------------------------------------------------------------+
-|   [ reviews section - structure only, no content yet ]        |  REVIEWS
-+--------------------------------------------------------------+
-|   SERVICE AREA                                               |  area block
+|  [ reviews section, structure only, visibly unpopulated ]    |  empty-state panel
 +--------------------------------------------------------------+
 |                    210-840-8533                              |  FINAL CTA
-|              [ Call for a Free Estimate ]                    |  dark band, phone-led
+|                 [ Request a Quote ]                          |  centered dark band
 +--------------------------------------------------------------+
 |  FOOTER                                                      |
 +--------------------------------------------------------------+
-|  [ Call Now ]            [ Request Quote ]                   |  sticky, mobile only
+|  [ Call for a Free Estimate ]      [ Request a Quote ]       |  sticky, mobile only
 +--------------------------------------------------------------+
 ```
 
@@ -143,30 +146,32 @@ where the phone number is the single object in the section.
 Built from the official logo, which is navy, steel blue, white and black. The
 brief asked for construction yellow as the accent with blue only as a maybe.
 The real brand is the reverse, so the system is blue and yellow is demoted to
-a single job.
+a single job. Confirmed by the owner on 2026-09-18.
 
 | Token | Value | Role |
 |---|---|---|
-| `--ink` | `#0f1620` | Deepest surface. Footer, area strip, featured band |
-| `--navy` | `#1b2739` | Brand navy. Header, hero, CTA bands |
-| `--navy-2` | `#26364d` | Raised surface on dark |
-| `--steel` | `#7fa8c9` | Logo blue. Section detail, meta text on dark |
-| `--steel-dim` | `#5c7f9e` | Muted blue on light |
-| `--paper` | `#f2f5f8` | Cool off-white page surface |
-| `--paper-2` | `#e6ecf2` | Process band |
-| `--hi-vis` | `#ffc72c` | Accent. Calls to action and focus rings only |
+| `--navy` | `#192942` | Brand navy. Header, hero, CTA bands, featured panel |
+| `--navy-900` | `#0e1726` | Deepest surface. Footer, area band |
+| `--navy-700` | `#243a57` | Raised surface on dark |
+| `--steel` | `#60a0c8` | Logo blue, on dark only. Rules, meta, active nav |
+| `--steel-deep` | `#2f6488` | Logo blue darkened for light surfaces, 6.0:1 on paper |
+| `--paper` | `#f8f8f8` | Page surface |
+| `--paper-2` | `#eceff2` | Alternate band, image placeholder fill |
+| `--ink` | `#14171c` | Body text |
+| `--hi-vis` | `#ffc72c` | Call button and focus ring only |
 
-Yellow is not in the logo, so it is used only where high-visibility contrast
-does real work: the call button, the focus ring, the rule under the hero and
-CTA bands, and the bullet on the area strip. Nothing else is yellow. The
-primary button is `--hi-vis` with `--ink` text, about 11:1.
+`--navy` is the logo's exact field colour, read off the file rather than from a
+histogram. The first sampling pass reported `#182840`, but that came from
+quantising into 3-bit buckets, which rounds down. The precise value matters
+because the logo is placed directly on the header: one or two values out and the
+badge reads as a pasted rectangle instead of disappearing into the bar. For the
+same reason the logo ships as PNG, not WebP, since lossy encoding shifts it.
 
-The off-white is cooled toward the blue rather than warmed, which keeps the
-site out of the rustic-western register the brief rules out.
-
-The logo also carries "SINCE 2024", which is a real and ownable fact and is
-used in the header lockup and the footer. It also means the site never leans
-on tenure. Capability and equipment carry the credibility instead.
+Yellow appears in exactly four places site-wide: the header call button, the
+closing CTA band button, the mobile call bar, and the focus ring. It is
+deliberately absent from section rules, measured figures, and per-service
+buttons, which all use blue. Five yellow buttons down a services page stops the
+colour meaning anything.
 
 ### Type
 
@@ -255,8 +260,12 @@ marked stub rather than to a live endpoint.
 
 ## Open questions for the owner
 
-Carried from `assets/reference/README.md`.
+Carried from `assets/reference/README.md`. Full detail and evidence in
+`docs/SOURCE-OF-TRUTH.md`.
 
 Email address. Business hours. Whether the service area is a named list or a
 radius. Any review he is willing to have quoted with attribution. Whether he
 wants licensed or insured stated. Whether he wants material pricing published.
+Which services list is current - the website's eleven or Instagram's bio,
+which adds framing and roofing. Which logo is current - the website's
+rectangular navy lockup or Instagram's circular badge.

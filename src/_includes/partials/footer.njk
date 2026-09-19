@@ -2,11 +2,14 @@
   <div class="wrap">
     <div class="ftr__grid">
 
-      <div>
+      <div class="ftr__brand">
+        {% if site.logo.src %}
+          <img src="{{ site.logo.src }}" alt="{{ site.logo.alt }}" width="{{ site.logo.width }}" height="{{ site.logo.height }}" loading="lazy" decoding="async">
+        {% endif %}
         <h2>{{ site.legalName }}</h2>
-        <p style="color: var(--on-dark-dim); max-width: 34ch;">{{ site.tagline }}</p>
+        <p class="ftr__tagline">{{ site.tagline }}</p>
         <a class="ftr__tel" href="{{ site.phone | telHref }}">{{ site.phone }}</a>
-        <p style="margin-top: 0.6rem;">{{ site.region }}</p>
+        <p class="ftr__region">{{ site.region }}</p>
       </div>
 
       <div>

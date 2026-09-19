@@ -1,95 +1,98 @@
 ---
 layout: layouts/base.njk
 title: "Legacy Contracting Solutions | Excavation, Concrete & Fencing in San Antonio, TX"
-description: "Excavation, concrete, fencing, hauling and site work for homeowners, contractors and commercial projects across San Antonio, Boerne, Bandera and Fair Oaks. Call 210-840-8533 for a free estimate."
+description: "Excavation, concrete, fencing, hauling and site work for homeowners, pool builders and contractors across San Antonio, Boerne, Bandera and Fair Oaks. Call 210-840-8533 for a free estimate."
 ---
 
-{# ---------- Hero ---------- #}
+{# ---------- Hero. One photograph, full bleed, headline in the sky. ---------- #}
 <section class="hero">
+  {#
+    Hand written rather than using the photo shortcode, because this is the only
+    image on the site that needs art direction: a 16:9 crop in a tall phone
+    viewport would cut the machine out of frame, so narrow screens get a 4:5
+    crop of the same photograph instead.
+  #}
+  <picture class="photo">
+    <source media="(max-width: 47.99rem)" type="image/avif" srcset="/assets/img/hero/site-work-tall-640.avif 640w, /assets/img/hero/site-work-tall-900.avif 900w" sizes="100vw">
+    <source media="(max-width: 47.99rem)" type="image/webp" srcset="/assets/img/hero/site-work-tall-640.webp 640w, /assets/img/hero/site-work-tall-900.webp 900w" sizes="100vw">
+    <source media="(max-width: 47.99rem)" type="image/jpeg" srcset="/assets/img/hero/site-work-tall-640.jpg 640w, /assets/img/hero/site-work-tall-900.jpg 900w" sizes="100vw">
+    <source type="image/avif" srcset="/assets/img/hero/site-work-wide-900.avif 900w, /assets/img/hero/site-work-wide-1400.avif 1400w, /assets/img/hero/site-work-wide-2000.avif 2000w" sizes="100vw">
+    <source type="image/webp" srcset="/assets/img/hero/site-work-wide-900.webp 900w, /assets/img/hero/site-work-wide-1400.webp 1400w, /assets/img/hero/site-work-wide-2000.webp 2000w" sizes="100vw">
+    <img src="/assets/img/hero/site-work-wide-1400.jpg"
+         srcset="/assets/img/hero/site-work-wide-900.jpg 900w, /assets/img/hero/site-work-wide-1400.jpg 1400w, /assets/img/hero/site-work-wide-2000.jpg 2000w"
+         sizes="100vw"
+         alt="A tracked skid steer parked on freshly graded ground beside a mound of sand, on open land under a wide Texas sky."
+         width="1400" height="788" fetchpriority="high" decoding="async">
+  </picture>
   <div class="hero__in">
-
-    <div class="hero__copy">
-      <h1>Built From the Ground Up.</h1>
-      <p class="hero__lede">
-        Excavation, concrete, fencing, hauling and site work for homeowners,
-        contractors and commercial projects across San Antonio.
-      </p>
-      <div class="btn-row">
-        <a class="btn btn--call" href="{{ site.phone | telHref }}">{{ site.cta.primary }}</a>
-        <a class="btn btn--ghost" href="/projects/">{{ site.cta.work }}</a>
-      </div>
+    <h1>{{ site.motto }}</h1>
+    <p class="hero__lede">
+      Excavation, concrete, fencing and hauling for homeowners, pool builders
+      and contractors across San Antonio.
+    </p>
+    <div class="btn-row">
+      <a class="btn btn--call" href="{{ site.phone | telHref }}">{{ site.cta.primary }}</a>
+      <a class="btn btn--ghost" href="/projects/">{{ site.cta.work }}</a>
     </div>
-
-    <div class="hero__media">
-      {% set phClass = "" %}
-      {% set phLabel = "Hero. One wide shot of equipment working on site, framed so the headline clears the left third." %}
-      {% set phFile = "hero-jobsite.jpg" %}
-      {% include "partials/ph.njk" %}
-    </div>
-
   </div>
 </section>
 
-{# ---------- Service area strip ---------- #}
-<div class="strip">
-  <div class="wrap">
+{# ---------- Service area. An inline run of real places, not a row of boxes. ---------- #}
+<div class="band">
+  <div class="wrap band__in">
+    <span class="band__label">Working in</span>
     <ul>
       {% for a in areas.documented %}<li>{{ a }}</li>{% endfor %}
-      <li class="strip__more">{{ areas.catchAll }}</li>
+      <li class="band__more">{{ areas.catchAll }}</li>
     </ul>
   </div>
 </div>
 
-{# ---------- Services. Five groups, five cells. ---------- #}
+{# ---------- What we do. Photographic lead cell, the rest on rules. ---------- #}
 <section id="services">
   <div class="wrap">
     <div class="s-head">
       <h2>What We Do</h2>
-      <p>
-        Five lines of work, handled by the same crew. Most jobs touch more than one.
-      </p>
+      <p>Five lines of work, handled by the same crew. Most jobs touch more than one.</p>
     </div>
 
-    <div class="svcs">
-      {% for s in services %}
-        <a class="svc {% if loop.first %}svc--lead{% endif %}" href="/services/#{{ s.id }}">
-          <h3 class="svc__title">{{ s.title }}</h3>
-          <p class="svc__lead">{{ s.lead }}</p>
-          <ul class="svc__items">
-            {% for item in s.items %}<li>{{ item }}</li>{% endfor %}
-          </ul>
-          {% if loop.first %}
-            <div class="svc__media">
-              {% set phClass = "ph--16x9" %}
-              {% set phLabel = "Skid steer or excavator mid dig." %}
-              {% set phFile = "services/excavation.jpg" %}
-              {% include "partials/ph.njk" %}
-            </div>
+    <div class="lede-grid">
+      {% set lead = services[0] %}
+      <a class="lede-lead" href="/services/#{{ lead.id }}">
+        {% photo lead.image, lead.imageAlt, "(min-width: 62rem) 52vw, 100vw" %}
+        <div class="lede-lead__cap">
+          <h3>{{ lead.title }}</h3>
+          <span>See the work</span>
+        </div>
+      </a>
+
+      <div class="lede-list">
+        {% for s in services %}
+          {% if not loop.first %}
+            <a class="lede-item" href="/services/#{{ s.id }}">
+              <h3>{{ s.title }}</h3>
+              <p>{{ s.lead }}</p>
+            </a>
           {% endif %}
-        </a>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </section>
 
-{# ---------- Featured project. Measurement as display type. ---------- #}
+{# ---------- Featured project. The measured figure is the loud element. ---------- #}
 {% set feat = projects | findBy("id", "concrete-2000-sqft") %}
 <section class="feature">
   <div class="feature__grid">
-
     <div class="feature__media">
-      {% set phClass = "" %}
-      {% set phLabel = "Largest documented pour. Wide shot of the finished slab." %}
-      {% set phFile = "projects/concrete-2000-sqft.jpg" %}
-      {% include "partials/ph.njk" %}
+      {% photo feat.images[0].file, feat.images[0].alt, "(min-width: 62rem) 58vw, 100vw" %}
     </div>
 
     <div class="feature__body">
-      <p class="measure">
-        {{ feat.measureValue }}<small>{{ feat.measureUnit }}</small>
-      </p>
+      <p class="measure">{{ feat.measureValue }}<small>{{ feat.measureUnit }}</small></p>
       <h2>{{ feat.title }}</h2>
       <p class="feature__loc">{{ feat.serviceLabel }}</p>
+      <p class="feature__sum">{{ feat.summary }}</p>
       <ul class="feature__scope">
         {% for step in feat.scope %}<li>{{ step }}</li>{% endfor %}
       </ul>
@@ -97,69 +100,68 @@ description: "Excavation, concrete, fencing, hauling and site work for homeowner
         <a class="btn btn--ghost" href="/projects/">{{ site.cta.work }}</a>
       </div>
     </div>
-
   </div>
 </section>
 
-{# ---------- Why Legacy ---------- #}
+{# ---------- Recent work. Offset grid, deliberately uneven. ---------- #}
+<section>
+  <div class="wrap">
+    <div class="s-head">
+      <h2>Recent Work</h2>
+      <p>Jobs documented across San Antonio and the Hill Country.</p>
+    </div>
+
+    <div class="work">
+      {% set shown = ["boerne-pool-excavation", "fair-oaks-king-ranch-fence", "lot-clearing-site-prep", "bandera-concrete-slab", "pool-removal-backfill-grading", "hauling-material-delivery"] %}
+      {% for id in shown %}
+        {% set p = projects | findBy("id", id) %}
+        <a class="work__item" href="/projects/#{{ p.id }}">
+          {% photo p.images[0].file, p.images[0].alt, "(min-width: 48rem) 32vw, 100vw" %}
+          <div class="work__cap">
+            <h3>{{ p.title }}</h3>
+            <span>{% if p.location %}{{ p.location }}{% else %}{{ p.serviceLabel }}{% endif %}</span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ---------- Capability. Prose on rules, no boxes. ---------- #}
 <section>
   <div class="wrap">
     <div class="s-head">
       <h2>Why Legacy</h2>
     </div>
 
-    <div class="why">
-      <div class="why__item">
+    <div class="cap">
+      <div class="cap__item">
         <h3>Equipment on site</h3>
         <p>
-          Skid steer work, dump trailers and tandem dump trucks are part of the
+          Skid steers, dump trailers and tandem dump trucks are part of the
           business, so digging, hauling and cleanup stay with one crew instead of
           being split between three.
         </p>
       </div>
-      <div class="why__item">
+      <div class="cap__item">
         <h3>Start to finish</h3>
         <p>
           Site prep, the work itself, and the haul off afterward. One number to
           call for all three.
         </p>
       </div>
-      <div class="why__item">
+      <div class="cap__item">
         <h3>Homeowners and contractors</h3>
         <p>
           The same crew works for homeowners, pool builders, landscapers and
           commercial clients.
         </p>
       </div>
-      <div class="why__item">
+      <div class="cap__item">
         <h3>Local work</h3>
         <p>
           Projects documented in San Antonio, Boerne, Bandera and Fair Oaks.
         </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-{# ---------- Process. His own words are the labels. ---------- #}
-<section class="proc">
-  <div class="wrap">
-    <div class="s-head">
-      <h2>{{ site.processLine }}</h2>
-    </div>
-
-    <div class="proc__grid">
-      <div class="proc__step">
-        <h3>Quote</h3>
-        <p>Call with the details or send photos. You get a price for the work.</p>
-      </div>
-      <div class="proc__step">
-        <h3>Approve</h3>
-        <p>Scope and price are agreed before anything starts. No surprises on site.</p>
-      </div>
-      <div class="proc__step">
-        <h3>Build</h3>
-        <p>We handle the rest, including hauling off what is left behind.</p>
       </div>
     </div>
   </div>
@@ -173,8 +175,10 @@ description: "Excavation, concrete, fencing, hauling and site work for homeowner
     </div>
 
     {#
-      Deliberately empty. No review, rating or name is invented anywhere on this
-      site. Replace this block with real quotes once the owner supplies them.
+      Deliberately empty. No review, rating, star count or customer name is
+      invented anywhere on this site. The live site's own testimonials page has
+      zero reviews on it. Replace this block with real quotes once the owner
+      supplies them, with a name attached to each.
     #}
     <div class="reviews__empty">
       <h3>This section is built and waiting on real reviews.</h3>
@@ -183,35 +187,6 @@ description: "Excavation, concrete, fencing, hauling and site work for homeowner
         vouch for the work and their words go in this space with their name
         attached. Three short quotes is enough.
       </p>
-    </div>
-  </div>
-</section>
-
-{# ---------- Service area ---------- #}
-<section>
-  <div class="wrap">
-    <div class="s-head">
-      <h2>Where We Work</h2>
-      <p>San Antonio and the surrounding Hill Country.</p>
-    </div>
-
-    <div class="areas__grid">
-      <div class="area">
-        <h3>San Antonio</h3>
-        <p>Primary service area.</p>
-      </div>
-      <div class="area">
-        <h3>Boerne</h3>
-        <p>Pool excavation.</p>
-      </div>
-      <div class="area">
-        <h3>Bandera</h3>
-        <p>Concrete slab work.</p>
-      </div>
-      <div class="area">
-        <h3>Fair Oaks</h3>
-        <p>Fencing and custom columns.</p>
-      </div>
     </div>
   </div>
 </section>

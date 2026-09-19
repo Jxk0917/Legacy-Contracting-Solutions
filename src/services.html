@@ -6,7 +6,7 @@ permalink: /services/
 ---
 
 <div class="phead">
-  <div class="wrap">
+  <div class="wrap phead__in">
     <h1>Services</h1>
     <p>
       Five lines of work, handled by the same crew. Most jobs touch more than one,
@@ -34,19 +34,21 @@ permalink: /services/
           </p>
 
           <div class="btn-row" style="margin-top: 1.6rem;">
-            <a class="btn btn--call" href="{{ site.phone | telHref }}">{{ site.cta.primary }}</a>
+            {#
+              Navy rather than yellow. The yellow call button is already on
+              screen in the sticky header and the mobile call bar, and five
+              yellow buttons down one page stops the colour meaning anything.
+            #}
+            <a class="btn btn--quote" href="{{ site.phone | telHref }}">{{ site.cta.primary }}</a>
             {% set related = projects | byCategory(s.id) %}
             {% if related | length %}
-              <a class="btn btn--quote" href="/projects/#{{ s.id }}">{{ site.cta.work }}</a>
+              <a class="btn btn--outline" href="/projects/#{{ s.id }}">{{ site.cta.work }}</a>
             {% endif %}
           </div>
         </div>
 
-        <div>
-          {% set phClass = "ph--4x3 ph--light" %}
-          {% set phLabel = s.imageAlt + "." %}
-          {% set phFile = "services/" + s.id + ".jpg" %}
-          {% include "partials/ph.njk" %}
+        <div class="sblock__media">
+          {% photo s.image, s.imageAlt, "(min-width: 62rem) 40vw, 100vw" %}
         </div>
 
       </div>

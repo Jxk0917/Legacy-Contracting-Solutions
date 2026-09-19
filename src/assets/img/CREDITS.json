@@ -1,0 +1,692 @@
+{
+  "generatedAt": "2026-09-19T01:59:14.868Z",
+  "source": "assets/reference (read-only)",
+  "images": [
+    {
+      "file": "hero/site-work-wide-2000",
+      "w": 2000,
+      "h": 1125,
+      "from": "assets/reference/projects/landscape.jpg",
+      "note": "Bobcat T450 on open land, fresh grading, big sky. The clearest single 'we own equipment and move dirt' frame in the whole capture, and wide enough to carry a headline."
+    },
+    {
+      "file": "hero/site-work-wide-1400",
+      "w": 1400,
+      "h": 788,
+      "from": "assets/reference/projects/landscape.jpg",
+      "note": "Bobcat T450 on open land, fresh grading, big sky. The clearest single 'we own equipment and move dirt' frame in the whole capture, and wide enough to carry a headline."
+    },
+    {
+      "file": "hero/site-work-wide-900",
+      "w": 900,
+      "h": 506,
+      "from": "assets/reference/projects/landscape.jpg",
+      "note": "Bobcat T450 on open land, fresh grading, big sky. The clearest single 'we own equipment and move dirt' frame in the whole capture, and wide enough to carry a headline."
+    },
+    {
+      "file": "hero/site-work-tall-900",
+      "w": 900,
+      "h": 1125,
+      "from": "assets/reference/projects/landscape.jpg",
+      "note": "Bobcat T450 on open land, fresh grading, big sky. The clearest single 'we own equipment and move dirt' frame in the whole capture, and wide enough to carry a headline."
+    },
+    {
+      "file": "hero/site-work-tall-640",
+      "w": 640,
+      "h": 800,
+      "from": "assets/reference/projects/landscape.jpg",
+      "note": "Bobcat T450 on open land, fresh grading, big sky. The clearest single 'we own equipment and move dirt' frame in the whole capture, and wide enough to carry a headline."
+    },
+    {
+      "file": "projects/boerne-pool-excavation-1-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/frames/01-DdLeCkJT_S3/frame-04-excavator-loading-dump-truck.jpg",
+      "note": "Excavator loading the dump trailer. Two machines in one frame."
+    },
+    {
+      "file": "projects/boerne-pool-excavation-1-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/frames/01-DdLeCkJT_S3/frame-04-excavator-loading-dump-truck.jpg",
+      "note": "Excavator loading the dump trailer. Two machines in one frame."
+    },
+    {
+      "file": "projects/boerne-pool-excavation-1-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/frames/01-DdLeCkJT_S3/frame-04-excavator-loading-dump-truck.jpg",
+      "note": "Excavator loading the dump trailer. Two machines in one frame."
+    },
+    {
+      "file": "projects/boerne-pool-excavation-2-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/frames/01-DdLeCkJT_S3/frame-03-excavator-trench-midwork.jpg",
+      "note": "Trench depth with a worker for scale."
+    },
+    {
+      "file": "projects/boerne-pool-excavation-2-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/frames/01-DdLeCkJT_S3/frame-03-excavator-trench-midwork.jpg",
+      "note": "Trench depth with a worker for scale."
+    },
+    {
+      "file": "projects/boerne-pool-excavation-2-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/frames/01-DdLeCkJT_S3/frame-03-excavator-trench-midwork.jpg",
+      "note": "Trench depth with a worker for scale."
+    },
+    {
+      "file": "projects/boerne-pool-excavation-3-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/frames/01-DdLeCkJT_S3/frame-01-topdown-excavator-digging.jpg",
+      "note": "Overhead, shows the dig outline."
+    },
+    {
+      "file": "projects/boerne-pool-excavation-3-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/frames/01-DdLeCkJT_S3/frame-01-topdown-excavator-digging.jpg",
+      "note": "Overhead, shows the dig outline."
+    },
+    {
+      "file": "projects/boerne-pool-excavation-3-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/frames/01-DdLeCkJT_S3/frame-01-topdown-excavator-digging.jpg",
+      "note": "Overhead, shows the dig outline."
+    },
+    {
+      "file": "projects/fence-refurbishment-1-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/frames/02-DdLw3rfTk6i/frame-03-finished-stained-fence-closeup.jpg",
+      "note": "Finished stain, full saturation."
+    },
+    {
+      "file": "projects/fence-refurbishment-1-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/frames/02-DdLw3rfTk6i/frame-03-finished-stained-fence-closeup.jpg",
+      "note": "Finished stain, full saturation."
+    },
+    {
+      "file": "projects/fence-refurbishment-1-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/frames/02-DdLw3rfTk6i/frame-03-finished-stained-fence-closeup.jpg",
+      "note": "Finished stain, full saturation."
+    },
+    {
+      "file": "projects/fence-refurbishment-2-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/frames/02-DdLw3rfTk6i/frame-02-sprayer-staining-in-progress.jpg",
+      "note": "Sprayer rig mid-job, shows it is his own equipment."
+    },
+    {
+      "file": "projects/fence-refurbishment-2-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/frames/02-DdLw3rfTk6i/frame-02-sprayer-staining-in-progress.jpg",
+      "note": "Sprayer rig mid-job, shows it is his own equipment."
+    },
+    {
+      "file": "projects/fence-refurbishment-2-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/frames/02-DdLw3rfTk6i/frame-02-sprayer-staining-in-progress.jpg",
+      "note": "Sprayer rig mid-job, shows it is his own equipment."
+    },
+    {
+      "file": "projects/fence-refurbishment-3-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/frames/02-DdLw3rfTk6i/frame-01-finished-stained-gate.jpg",
+      "note": "Gate section finished."
+    },
+    {
+      "file": "projects/fence-refurbishment-3-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/frames/02-DdLw3rfTk6i/frame-01-finished-stained-gate.jpg",
+      "note": "Gate section finished."
+    },
+    {
+      "file": "projects/fence-refurbishment-3-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/frames/02-DdLw3rfTk6i/frame-01-finished-stained-gate.jpg",
+      "note": "Gate section finished."
+    },
+    {
+      "file": "projects/bandera-concrete-slab-1-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/03-DdLvnC4lscd-02.jpg",
+      "note": "Finished 600 sq ft slab, hand floated."
+    },
+    {
+      "file": "projects/bandera-concrete-slab-1-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/03-DdLvnC4lscd-02.jpg",
+      "note": "Finished 600 sq ft slab, hand floated."
+    },
+    {
+      "file": "projects/bandera-concrete-slab-1-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/03-DdLvnC4lscd-02.jpg",
+      "note": "Finished 600 sq ft slab, hand floated."
+    },
+    {
+      "file": "projects/bandera-concrete-slab-2-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/03-DdLvnC4lscd-01.jpg",
+      "note": "Placing around existing posts, the hard part of this job."
+    },
+    {
+      "file": "projects/bandera-concrete-slab-2-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/03-DdLvnC4lscd-01.jpg",
+      "note": "Placing around existing posts, the hard part of this job."
+    },
+    {
+      "file": "projects/bandera-concrete-slab-2-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/03-DdLvnC4lscd-01.jpg",
+      "note": "Placing around existing posts, the hard part of this job."
+    },
+    {
+      "file": "projects/concrete-2000-sqft-1-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/04-DdLu88WFu6e-01.jpg",
+      "note": "Finished drive, the largest documented pour."
+    },
+    {
+      "file": "projects/concrete-2000-sqft-1-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/04-DdLu88WFu6e-01.jpg",
+      "note": "Finished drive, the largest documented pour."
+    },
+    {
+      "file": "projects/concrete-2000-sqft-1-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/04-DdLu88WFu6e-01.jpg",
+      "note": "Finished drive, the largest documented pour."
+    },
+    {
+      "file": "projects/concrete-2000-sqft-2-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/04-DdLu88WFu6e-04.jpg",
+      "note": "Forms and reinforcement set, before the pour."
+    },
+    {
+      "file": "projects/concrete-2000-sqft-2-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/04-DdLu88WFu6e-04.jpg",
+      "note": "Forms and reinforcement set, before the pour."
+    },
+    {
+      "file": "projects/concrete-2000-sqft-2-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/04-DdLu88WFu6e-04.jpg",
+      "note": "Forms and reinforcement set, before the pour."
+    },
+    {
+      "file": "projects/concrete-2000-sqft-3-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/04-DdLu88WFu6e-03.jpg",
+      "note": "Finished walkway running to the house."
+    },
+    {
+      "file": "projects/concrete-2000-sqft-3-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/04-DdLu88WFu6e-03.jpg",
+      "note": "Finished walkway running to the house."
+    },
+    {
+      "file": "projects/concrete-2000-sqft-3-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/04-DdLu88WFu6e-03.jpg",
+      "note": "Finished walkway running to the house."
+    },
+    {
+      "file": "projects/pool-removal-1-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/05-DdLuLPBFuIb-02.jpg",
+      "note": "The pool as found. Reads as a genuine before."
+    },
+    {
+      "file": "projects/pool-removal-1-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/05-DdLuLPBFuIb-02.jpg",
+      "note": "The pool as found. Reads as a genuine before."
+    },
+    {
+      "file": "projects/pool-removal-1-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/05-DdLuLPBFuIb-02.jpg",
+      "note": "The pool as found. Reads as a genuine before."
+    },
+    {
+      "file": "projects/pool-removal-2-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/05-DdLuLPBFuIb-04.jpg",
+      "note": "Backfilled and graded flat. The after."
+    },
+    {
+      "file": "projects/pool-removal-2-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/05-DdLuLPBFuIb-04.jpg",
+      "note": "Backfilled and graded flat. The after."
+    },
+    {
+      "file": "projects/pool-removal-2-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/05-DdLuLPBFuIb-04.jpg",
+      "note": "Backfilled and graded flat. The after."
+    },
+    {
+      "file": "projects/pool-removal-3-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/05-DdLuLPBFuIb-01.jpg",
+      "note": "Graded yard, wider view."
+    },
+    {
+      "file": "projects/pool-removal-3-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/05-DdLuLPBFuIb-01.jpg",
+      "note": "Graded yard, wider view."
+    },
+    {
+      "file": "projects/pool-removal-3-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/05-DdLuLPBFuIb-01.jpg",
+      "note": "Graded yard, wider view."
+    },
+    {
+      "file": "projects/fair-oaks-king-ranch-fence-1-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/frames/07-DdLmODGTwAj/frame-02-finished-gate-stucco-column.jpg",
+      "note": "Gate against the stucco column. Clearest finished result."
+    },
+    {
+      "file": "projects/fair-oaks-king-ranch-fence-1-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/frames/07-DdLmODGTwAj/frame-02-finished-gate-stucco-column.jpg",
+      "note": "Gate against the stucco column. Clearest finished result."
+    },
+    {
+      "file": "projects/fair-oaks-king-ranch-fence-1-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/frames/07-DdLmODGTwAj/frame-02-finished-gate-stucco-column.jpg",
+      "note": "Gate against the stucco column. Clearest finished result."
+    },
+    {
+      "file": "projects/fair-oaks-king-ranch-fence-2-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/07-DdLmODGTwAj-01.jpg",
+      "note": "Column and ironwork detail."
+    },
+    {
+      "file": "projects/fair-oaks-king-ranch-fence-2-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/07-DdLmODGTwAj-01.jpg",
+      "note": "Column and ironwork detail."
+    },
+    {
+      "file": "projects/fair-oaks-king-ranch-fence-2-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/07-DdLmODGTwAj-01.jpg",
+      "note": "Column and ironwork detail."
+    },
+    {
+      "file": "projects/fair-oaks-king-ranch-fence-3-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/frames/07-DdLmODGTwAj/frame-03-stucco-column-freshly-built.jpg",
+      "note": "Column before the panel went on, evidence of the masonry step."
+    },
+    {
+      "file": "projects/fair-oaks-king-ranch-fence-3-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/frames/07-DdLmODGTwAj/frame-03-stucco-column-freshly-built.jpg",
+      "note": "Column before the panel went on, evidence of the masonry step."
+    },
+    {
+      "file": "projects/fair-oaks-king-ranch-fence-3-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/frames/07-DdLmODGTwAj/frame-03-stucco-column-freshly-built.jpg",
+      "note": "Column before the panel went on, evidence of the masonry step."
+    },
+    {
+      "file": "projects/lot-clearing-1-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/09-DdLj4vblog3-03.jpg",
+      "note": "Overgrown lot as found."
+    },
+    {
+      "file": "projects/lot-clearing-1-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/09-DdLj4vblog3-03.jpg",
+      "note": "Overgrown lot as found."
+    },
+    {
+      "file": "projects/lot-clearing-1-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/09-DdLj4vblog3-03.jpg",
+      "note": "Overgrown lot as found."
+    },
+    {
+      "file": "projects/lot-clearing-2-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/09-DdLj4vblog3-02.jpg",
+      "note": "Skid steer mid-clear."
+    },
+    {
+      "file": "projects/lot-clearing-2-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/09-DdLj4vblog3-02.jpg",
+      "note": "Skid steer mid-clear."
+    },
+    {
+      "file": "projects/lot-clearing-2-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/09-DdLj4vblog3-02.jpg",
+      "note": "Skid steer mid-clear."
+    },
+    {
+      "file": "projects/lot-clearing-3-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/09-DdLj4vblog3-05.jpg",
+      "note": "Finished, graded and surfaced. The after."
+    },
+    {
+      "file": "projects/lot-clearing-3-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/09-DdLj4vblog3-05.jpg",
+      "note": "Finished, graded and surfaced. The after."
+    },
+    {
+      "file": "projects/lot-clearing-3-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/09-DdLj4vblog3-05.jpg",
+      "note": "Finished, graded and surfaced. The after."
+    },
+    {
+      "file": "projects/hauling-1-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/06-DdLpLArFikN-05.jpg",
+      "note": "Trailer tipping a gravel load. The service in one frame."
+    },
+    {
+      "file": "projects/hauling-1-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/06-DdLpLArFikN-05.jpg",
+      "note": "Trailer tipping a gravel load. The service in one frame."
+    },
+    {
+      "file": "projects/hauling-1-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/06-DdLpLArFikN-05.jpg",
+      "note": "Trailer tipping a gravel load. The service in one frame."
+    },
+    {
+      "file": "projects/hauling-2-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/06-DdLpLArFikN-08.jpg",
+      "note": "Two skid steers on a residential job. Strongest equipment-ownership proof."
+    },
+    {
+      "file": "projects/hauling-2-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/06-DdLpLArFikN-08.jpg",
+      "note": "Two skid steers on a residential job. Strongest equipment-ownership proof."
+    },
+    {
+      "file": "projects/hauling-2-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/06-DdLpLArFikN-08.jpg",
+      "note": "Two skid steers on a residential job. Strongest equipment-ownership proof."
+    },
+    {
+      "file": "projects/hauling-3-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/06-DdLpLArFikN-10.jpg",
+      "note": "Truck and dump trailer, clean side view."
+    },
+    {
+      "file": "projects/hauling-3-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/06-DdLpLArFikN-10.jpg",
+      "note": "Truck and dump trailer, clean side view."
+    },
+    {
+      "file": "projects/hauling-3-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/06-DdLpLArFikN-10.jpg",
+      "note": "Truck and dump trailer, clean side view."
+    },
+    {
+      "file": "services/excavation-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/09-DdLj4vblog3-02.jpg",
+      "note": "Skid steer working a cleared strip. Unmistakably excavation at thumbnail size, where the finished pool ring just read as a sandy circle."
+    },
+    {
+      "file": "services/excavation-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/09-DdLj4vblog3-02.jpg",
+      "note": "Skid steer working a cleared strip. Unmistakably excavation at thumbnail size, where the finished pool ring just read as a sandy circle."
+    },
+    {
+      "file": "services/excavation-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/09-DdLj4vblog3-02.jpg",
+      "note": "Skid steer working a cleared strip. Unmistakably excavation at thumbnail size, where the finished pool ring just read as a sandy circle."
+    },
+    {
+      "file": "services/concrete-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/projects/concreto.jpg",
+      "note": "Finished drive approach, clean edges."
+    },
+    {
+      "file": "services/concrete-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/projects/concreto.jpg",
+      "note": "Finished drive approach, clean edges."
+    },
+    {
+      "file": "services/concrete-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/projects/concreto.jpg",
+      "note": "Finished drive approach, clean edges."
+    },
+    {
+      "file": "services/fencing-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/projects/job-2025-07-15-aabe148a.jpg",
+      "note": "New cedar privacy fence. Best fence photograph in the capture."
+    },
+    {
+      "file": "services/fencing-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/projects/job-2025-07-15-aabe148a.jpg",
+      "note": "New cedar privacy fence. Best fence photograph in the capture."
+    },
+    {
+      "file": "services/fencing-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/projects/job-2025-07-15-aabe148a.jpg",
+      "note": "New cedar privacy fence. Best fence photograph in the capture."
+    },
+    {
+      "file": "services/hauling-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/06-DdLpLArFikN-04.jpg",
+      "note": "Loaded dump trailer, gate open."
+    },
+    {
+      "file": "services/hauling-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/06-DdLpLArFikN-04.jpg",
+      "note": "Loaded dump trailer, gate open."
+    },
+    {
+      "file": "services/hauling-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/06-DdLpLArFikN-04.jpg",
+      "note": "Loaded dump trailer, gate open."
+    },
+    {
+      "file": "services/demolition-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/08-DdLkqNelqFM-03.jpg",
+      "note": "Torn-out fencing and timber stacked for haul-off. Reads as removal at a glance, unlike the wider grading shots."
+    },
+    {
+      "file": "services/demolition-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/08-DdLkqNelqFM-03.jpg",
+      "note": "Torn-out fencing and timber stacked for haul-off. Reads as removal at a glance, unlike the wider grading shots."
+    },
+    {
+      "file": "services/demolition-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/08-DdLkqNelqFM-03.jpg",
+      "note": "Torn-out fencing and timber stacked for haul-off. Reads as removal at a glance, unlike the wider grading shots."
+    },
+    {
+      "file": "work/backyard-complete-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/11-DNrLDMU6Oa0-01.jpg",
+      "note": "Finished pool and deck. The aspirational end state of the work he does."
+    },
+    {
+      "file": "work/backyard-complete-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/11-DNrLDMU6Oa0-01.jpg",
+      "note": "Finished pool and deck. The aspirational end state of the work he does."
+    },
+    {
+      "file": "work/backyard-complete-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/11-DNrLDMU6Oa0-01.jpg",
+      "note": "Finished pool and deck. The aspirational end state of the work he does."
+    },
+    {
+      "file": "work/pool-complete-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/10-DdLgX4kFrss-04.jpg",
+      "note": "Pool set and standing where the excavation was."
+    },
+    {
+      "file": "work/pool-complete-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/10-DdLgX4kFrss-04.jpg",
+      "note": "Pool set and standing where the excavation was."
+    },
+    {
+      "file": "work/pool-complete-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/10-DdLgX4kFrss-04.jpg",
+      "note": "Pool set and standing where the excavation was."
+    },
+    {
+      "file": "work/truck-1600",
+      "w": 1600,
+      "h": 1067,
+      "from": "assets/reference/instagram/media/06-DdLpLArFikN-13.jpg",
+      "note": "His truck. Used small, as a capability note."
+    },
+    {
+      "file": "work/truck-1000",
+      "w": 1000,
+      "h": 667,
+      "from": "assets/reference/instagram/media/06-DdLpLArFikN-13.jpg",
+      "note": "His truck. Used small, as a capability note."
+    },
+    {
+      "file": "work/truck-640",
+      "w": 640,
+      "h": 427,
+      "from": "assets/reference/instagram/media/06-DdLpLArFikN-13.jpg",
+      "note": "His truck. Used small, as a capability note."
+    }
+  ]
+}

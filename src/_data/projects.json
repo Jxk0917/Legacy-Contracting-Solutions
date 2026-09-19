@@ -7,12 +7,25 @@
     "serviceLabel": "Excavation & Site Work",
     "measurement": null,
     "summary": "Excavation for a new pool build in Boerne.",
-    "scope": ["Pool excavation"],
+    "scope": [
+      "Pool excavation"
+    ],
     "featured": true,
-    "images": [],
-    "beforeAfter": null,
+    "images": [
+      {
+        "file": "projects/boerne-pool-excavation-1",
+        "alt": "A compact excavator lifting a bucket of soil over a red dump trailer in a back garden."
+      },
+      {
+        "file": "projects/boerne-pool-excavation-2",
+        "alt": "The excavator working in an open trench beside the house, with a worker standing at the edge."
+      },
+      {
+        "file": "projects/boerne-pool-excavation-3",
+        "alt": "Overhead view of the excavator cutting the dig outline into the lawn."
+      }
+    ],
     "detailsNeeded": [
-      "Photos",
       "Pool size or dig depth, if he wants it stated",
       "Whether he worked directly for the homeowner or for a pool builder"
     ]
@@ -25,14 +38,29 @@
     "serviceLabel": "Fencing & Exterior Work",
     "measurement": null,
     "summary": "Existing fence repaired and refinished rather than replaced.",
-    "scope": ["Fence refurbishment", "Fence staining"],
+    "scope": [
+      "Fence refurbishment",
+      "Fence staining"
+    ],
     "featured": true,
-    "images": [],
-    "beforeAfter": null,
+    "images": [
+      {
+        "file": "projects/fence-refurbishment-1",
+        "alt": "A refinished board fence in fresh orange-brown stain running the length of the yard."
+      },
+      {
+        "file": "projects/fence-refurbishment-2",
+        "alt": "A petrol sprayer and stain bucket on the ground, with the fence line being sprayed behind."
+      },
+      {
+        "file": "projects/fence-refurbishment-3",
+        "alt": "The finished gate section, stained to match the rest of the run."
+      }
+    ],
     "detailsNeeded": [
-      "Before and after photos, which this job is ideal for",
       "Location",
-      "Linear footage, if known"
+      "Linear footage, if known",
+      "A photo of the fence before the work, if he has one. The video starts after the old finish was stripped."
     ]
   },
   {
@@ -45,11 +73,26 @@
     "measureValue": "600",
     "measureUnit": "Sq. Ft.",
     "summary": "A poured and finished slab of roughly 600 square feet in Bandera.",
-    "scope": ["Site preparation", "Reinforcement", "Concrete placement", "Concrete finishing"],
+    "scope": [
+      "Site preparation",
+      "Reinforcement",
+      "Concrete placement",
+      "Concrete finishing"
+    ],
     "featured": true,
-    "images": [],
-    "beforeAfter": null,
-    "detailsNeeded": ["Photos", "What the slab was for, such as a shop, addition, or patio"]
+    "images": [
+      {
+        "file": "projects/bandera-concrete-slab-1",
+        "alt": "The finished slab floated smooth, poured underneath an existing timber structure."
+      },
+      {
+        "file": "projects/bandera-concrete-slab-2",
+        "alt": "A worker screeding wet concrete by hand around the existing posts."
+      }
+    ],
+    "detailsNeeded": [
+      "What the slab was for, such as a shop, addition, or patio"
+    ]
   },
   {
     "id": "concrete-2000-sqft",
@@ -60,13 +103,28 @@
     "measurement": "Approx. 2,000 sq. ft.",
     "measureValue": "2,000",
     "measureUnit": "Sq. Ft.",
-    "summary": "A concrete project of roughly 2,000 square feet.",
-    "scope": ["Site preparation", "Concrete placement", "Concrete finishing"],
+    "summary": "A concrete project of roughly 2,000 square feet, taken from site prep through to finish.",
+    "scope": [
+      "Site preparation",
+      "Concrete placement",
+      "Concrete finishing"
+    ],
     "featured": true,
-    "images": [],
-    "beforeAfter": null,
+    "images": [
+      {
+        "file": "projects/concrete-2000-sqft-2",
+        "alt": "Formwork and steel reinforcement laid out across the pad before the pour."
+      },
+      {
+        "file": "projects/concrete-2000-sqft-1",
+        "alt": "The finished concrete drive running down the side of the property."
+      },
+      {
+        "file": "projects/concrete-2000-sqft-3",
+        "alt": "A finished concrete walkway running along the side of the house."
+      }
+    ],
     "detailsNeeded": [
-      "Photos",
       "Location",
       "What the pour was, such as a driveway, shop slab, or commercial pad. This is the largest documented job and is worth leading with."
     ]
@@ -79,12 +137,30 @@
     "serviceLabel": "Demolition & Removal",
     "measurement": null,
     "summary": "An existing pool removed, the void backfilled, and the yard graded back out.",
-    "scope": ["Pool demolition", "Backfill", "Grading", "Site cleanup"],
+    "scope": [
+      "Pool demolition",
+      "Backfill",
+      "Grading",
+      "Site cleanup"
+    ],
     "featured": true,
-    "images": [],
-    "beforeAfter": null,
+    "images": [
+      {
+        "file": "projects/pool-removal-1",
+        "alt": "The above ground pool as found, drained and full of debris.",
+        "role": "before"
+      },
+      {
+        "file": "projects/pool-removal-2",
+        "alt": "The same yard after removal, backfilled and graded flat to the fence line.",
+        "role": "after"
+      },
+      {
+        "file": "projects/pool-removal-3",
+        "alt": "The graded ground seen from further back across the lot."
+      }
+    ],
     "detailsNeeded": [
-      "Before and after photos, which sell this service better than any description",
       "Location"
     ]
   },
@@ -96,12 +172,27 @@
     "serviceLabel": "Fencing & Exterior Work",
     "measurement": null,
     "summary": "A King Ranch-style fence with custom stucco columns in Fair Oaks.",
-    "scope": ["King Ranch-style fencing", "Custom columns", "Entry sections"],
+    "scope": [
+      "King Ranch-style fencing",
+      "Custom columns",
+      "Entry sections"
+    ],
     "featured": true,
-    "images": [],
-    "beforeAfter": null,
+    "images": [
+      {
+        "file": "projects/fair-oaks-king-ranch-fence-1",
+        "alt": "The finished gate hung beside a rendered stucco column, with matching ironwork running off to the side."
+      },
+      {
+        "file": "projects/fair-oaks-king-ranch-fence-2",
+        "alt": "A stucco column next to a black iron fence panel, looking out over open ground."
+      },
+      {
+        "file": "projects/fair-oaks-king-ranch-fence-3",
+        "alt": "A finished stucco column standing at the entrance before the fence panel was hung."
+      }
+    ],
     "detailsNeeded": [
-      "Photos. This is the most visually distinctive job on the list and should lead the fencing section.",
       "Linear footage and column count, if known"
     ]
   },
@@ -114,12 +205,34 @@
     "measurement": "Approx. 5,000 sq. ft.",
     "measureValue": "5,000",
     "measureUnit": "Sq. Ft.",
-    "summary": "Roughly 5,000 square feet cleared and prepped for construction.",
-    "scope": ["Land clearing", "Lot clearing", "Site preparation", "Grading"],
+    "summary": "Roughly 5,000 square feet cleared and prepped for construction. He gives the lot as 50 by 100 feet.",
+    "scope": [
+      "Land clearing",
+      "Lot clearing",
+      "Site preparation",
+      "Grading"
+    ],
     "featured": true,
-    "images": [],
-    "beforeAfter": null,
-    "detailsNeeded": ["Before and after photos", "Location", "What was built afterward, if he knows"]
+    "images": [
+      {
+        "file": "projects/lot-clearing-1",
+        "alt": "The lot as found, heavily overgrown with brush and scrub against the fence.",
+        "role": "before"
+      },
+      {
+        "file": "projects/lot-clearing-3",
+        "alt": "The finished lot, cleared and surfaced flat, with a worker walking the far edge.",
+        "role": "after"
+      },
+      {
+        "file": "projects/lot-clearing-2",
+        "alt": "A skid steer working down the cleared strip between the building and the fence."
+      }
+    ],
+    "detailsNeeded": [
+      "Location",
+      "What was built afterward, if he knows"
+    ]
   },
   {
     "id": "hauling-material-delivery",
@@ -129,13 +242,29 @@
     "serviceLabel": "Hauling & Material Services",
     "measurement": null,
     "summary": "Material delivery and haul-off using dump trailer and tandem dump truck.",
-    "scope": ["Dirt delivery", "Base delivery", "Gravel delivery", "Construction debris haul-off"],
+    "scope": [
+      "Dirt delivery",
+      "Base delivery",
+      "Gravel delivery",
+      "Construction debris haul-off"
+    ],
     "featured": false,
-    "images": [],
-    "beforeAfter": null,
+    "images": [
+      {
+        "file": "projects/hauling-1",
+        "alt": "A dump trailer tipping a load of gravel onto a driveway."
+      },
+      {
+        "file": "projects/hauling-2",
+        "alt": "Two skid steers parked on a residential job, loaded and ready to work."
+      },
+      {
+        "file": "projects/hauling-3",
+        "alt": "The pickup and tandem axle dump trailer parked at the kerb."
+      }
+    ],
     "detailsNeeded": [
-      "Photos of the truck and trailer loaded. Equipment photos are the strongest credibility signal on the whole site.",
-      "Whether he wants to publish material pricing or delivery radius"
+      "Whether he wants to publish material pricing or a delivery radius"
     ]
   }
 ]

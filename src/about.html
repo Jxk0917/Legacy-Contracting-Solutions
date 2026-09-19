@@ -6,7 +6,7 @@ permalink: /about/
 ---
 
 <div class="phead">
-  <div class="wrap">
+  <div class="wrap phead__in">
     <h1>About Legacy</h1>
     <p>{{ site.tagline }}</p>
   </div>
@@ -14,7 +14,7 @@ permalink: /about/
 
 <section>
   <div class="wrap">
-    <div class="sblock__grid">
+    <div class="about__grid">
 
       <div class="prose">
         <h2>What we do</h2>
@@ -23,6 +23,15 @@ permalink: /about/
           working in San Antonio and the surrounding areas. The work covers
           excavation and site preparation, concrete, fencing, hauling and material
           delivery, and demolition and removal.
+        </p>
+        {#
+          Founding year and founder are the only biographical facts confirmed
+          anywhere. Both come from the owner's own About page, and "Since 2024"
+          is set into the logo artwork as well. Nothing further about him is
+          stated, because nothing further is confirmed.
+        #}
+        <p>
+          The company was founded in 2024 by Cesar Loera.
         </p>
         <p>
           Customers are homeowners, contractors, pool builders, landscapers and
@@ -42,7 +51,7 @@ permalink: /about/
           stay with one number.
         </p>
 
-        <p class="pull">Built from the ground up.</p>
+        <p class="pull">{{ site.motto }}</p>
 
         <h2>Where we work</h2>
         <p>
@@ -52,11 +61,11 @@ permalink: /about/
         </p>
       </div>
 
-      <div>
-        {% set phClass = "ph--4x3 ph--light" %}
-        {% set phLabel = "Owner or crew on a jobsite, or the truck and trailer loaded. Optional, and only if he is comfortable with it." %}
-        {% set phFile = "about/crew.jpg" %}
-        {% include "partials/ph.njk" %}
+      <div class="about__media">
+        <figure>
+          {% photo "projects/hauling-2", "Two skid steers parked on a residential job, loaded and ready to work.", "(min-width: 62rem) 30vw, 100vw" %}
+          <figcaption>Skid steers on a residential job in the San Antonio area.</figcaption>
+        </figure>
       </div>
 
     </div>

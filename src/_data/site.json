@@ -5,38 +5,48 @@
   "phone": "210-840-8533",
   "region": "San Antonio, Texas and surrounding areas",
   "regionShort": "San Antonio, TX",
-
+  "_comment_phrases": "tagline and motto are confirmed: both appear in his own Instagram captions, and the tagline is on his website too. processLine is NOT confirmed by any captured source and is deliberately not rendered anywhere. See docs/OWNER-CONFIRMATION.md.",
   "tagline": "Setting the Standards of Quality and Trust.",
   "motto": "Built from the ground up.",
-  "processLine": "Quote. Approve. Build. It's that simple.",
-
+  "processLineUnconfirmed": "Quote. Approve. Build. It's that simple.",
   "since": "2024",
-
   "_comment_demoNotes": "Shows the amber 'still needed' notes on Projects, the form stub warning, and the footer demo line. Set false for a clean walkthrough, true when working through content gaps with the owner.",
   "demoNotes": true,
-
   "logo": {
-    "_note": "Set src once the official logo file is saved to src/assets/img/brand/. Until then the header renders a typographic lockup. The logo is used as-is and never redrawn.",
-    "src": null,
+    "_note": "The official logo, scaled only. Never redrawn, traced, or approximated. Served as PNG rather than WebP on purpose: lossy encoding shifts its navy field, and the field has to match --navy exactly or the badge shows a visible box on the header.",
+    "src": "/assets/img/brand/logo-260.png",
+    "width": 260,
+    "height": 210,
     "alt": "Legacy Contracting Solutions LLC"
   },
-
   "cta": {
+    "_note": "One label per intent, site wide. Short variants were removed on purpose: two names for the same action is the thing the brief rules out.",
     "primary": "Call for a Free Estimate",
-    "primaryShort": "Call Now",
     "secondary": "Request a Quote",
-    "secondaryShort": "Get a Quote",
     "work": "View Our Work"
   },
-
   "nav": [
-    { "label": "Home", "url": "/" },
-    { "label": "Services", "url": "/services/" },
-    { "label": "Projects", "url": "/projects/" },
-    { "label": "About", "url": "/about/" },
-    { "label": "Contact", "url": "/contact/" }
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Services",
+      "url": "/services/"
+    },
+    {
+      "label": "Projects",
+      "url": "/projects/"
+    },
+    {
+      "label": "About",
+      "url": "/about/"
+    },
+    {
+      "label": "Contact",
+      "url": "/contact/"
+    }
   ],
-
   "_unknown": {
     "note": "Confirm with owner before publishing. Nothing here is rendered while null.",
     "email": null,

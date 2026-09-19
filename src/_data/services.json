@@ -14,9 +14,13 @@
       "Land clearing",
       "Lot clearing"
     ],
-    "customers": ["Pool builders", "Homeowners", "Contractors"],
-    "image": null,
-    "imageAlt": "Excavation work on a San Antonio area jobsite"
+    "customers": [
+      "Pool builders",
+      "Homeowners",
+      "Contractors"
+    ],
+    "image": "services/excavation",
+    "imageAlt": "A skid steer working down a cleared strip of ground between a building and a fence."
   },
   {
     "id": "concrete",
@@ -34,9 +38,13 @@
       "Concrete placement",
       "Concrete finishing"
     ],
-    "customers": ["Homeowners", "Contractors", "Commercial clients"],
-    "image": null,
-    "imageAlt": "Finished concrete slab poured by Legacy Contracting Solutions"
+    "customers": [
+      "Homeowners",
+      "Contractors",
+      "Commercial clients"
+    ],
+    "image": "services/concrete",
+    "imageAlt": "A finished concrete drive approach with clean edges, meeting the road."
   },
   {
     "id": "fencing",
@@ -51,9 +59,12 @@
       "Entry sections",
       "Custom columns"
     ],
-    "customers": ["Homeowners", "Contractors"],
-    "image": null,
-    "imageAlt": "King Ranch-style fence with custom columns"
+    "customers": [
+      "Homeowners",
+      "Contractors"
+    ],
+    "image": "services/fencing",
+    "imageAlt": "A newly built cedar privacy fence running the length of a garden."
   },
   {
     "id": "hauling",
@@ -69,9 +80,14 @@
       "Equipment hauling",
       "Jobsite cleanup"
     ],
-    "customers": ["Contractors", "Landscapers", "Homeowners", "Commercial clients"],
-    "image": null,
-    "imageAlt": "Dump trailer loaded for material delivery"
+    "customers": [
+      "Contractors",
+      "Landscapers",
+      "Homeowners",
+      "Commercial clients"
+    ],
+    "image": "services/hauling",
+    "imageAlt": "A loaded dump trailer with the tailgate open, parked on a job."
   },
   {
     "id": "demolition",
@@ -83,8 +99,12 @@
       "Site cleanup",
       "Demolition and removal work"
     ],
-    "customers": ["Homeowners", "Contractors", "Commercial clients"],
-    "image": null,
-    "imageAlt": "Pool demolition and removal in progress"
+    "customers": [
+      "Homeowners",
+      "Contractors",
+      "Commercial clients"
+    ],
+    "image": "services/demolition",
+    "imageAlt": "Torn-out fencing and timber debris stacked on the ground, ready to be hauled off."
   }
 ]

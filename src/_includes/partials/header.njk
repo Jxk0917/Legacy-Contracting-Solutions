@@ -1,16 +1,21 @@
 <header class="hdr">
   <div class="wrap hdr__in">
 
+    {#
+      The official logo, scaled only. Its navy field matches the header navy, so
+      it reads as art rather than as a pasted rectangle. The badge sets the
+      company name at full size but not legibly at header scale, so the name is
+      set alongside it in the display face. The logo is never redrawn.
+      The image is decorative here because the adjacent text carries the name.
+    #}
     <a class="hdr__logo" href="/">
       {% if site.logo.src %}
-        <img src="{{ site.logo.src }}" alt="{{ site.logo.alt }}" width="180" height="46">
-      {% else %}
-        {# Typographic stand-in. Replaced by the official logo file, never redrawn. #}
-        <span class="lockup">
-          <span class="lockup__name">{{ site.name }}</span>
-          <span class="lockup__sub">Since {{ site.since }}</span>
-        </span>
+        <img src="{{ site.logo.src }}" alt="" width="{{ site.logo.width }}" height="{{ site.logo.height }}">
       {% endif %}
+      <span class="lockup">
+        <span class="lockup__name">{{ site.name }}</span>
+        <span class="lockup__sub">Since {{ site.since }}</span>
+      </span>
     </a>
 
     <nav class="nav" aria-label="Main">

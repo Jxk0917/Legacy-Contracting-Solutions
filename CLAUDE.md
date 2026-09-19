@@ -93,14 +93,40 @@ knows what it is doing.
 
 ### Color
 
-Near-black and charcoal base, off-white surfaces, muted neutral grays,
-construction yellow as the single accent. Muted blue only if the real logo
-supports it.
+Resolved 2026-09-18. Sampled from `assets/reference/brand/logo-original.png`
+(dominant-color analysis, logged in `assets/reference/current-site/README.md`).
+The logo carries no yellow at all: it is navy, steel blue, near-black, and
+off-white. That inverts this section's original assumption, so blue is now the
+primary brand color and yellow is demoted to a conditional accent, per an
+explicit decision from the project owner on this date.
 
-Yellow is for CTAs, key highlights, micro accents, hover states, and structural
-details. One accent, locked across every page. The site is not yellow.
+Sampled values:
 
-Exact values are sampled from the real logo once it is available, not invented.
+| Role | Hex | Share of logo |
+|---|---|---|
+| Navy | `#182840` | 59% |
+| Near-black | `#000000` | 14% |
+| Off-white | `#F8F8F8` | 4% |
+| Steel blue | `#60A0C8` | 2% |
+
+Base the palette on navy, near-black, and off-white surfaces, with steel blue as
+the structural accent (section rules, meta text on dark, secondary highlights).
+
+Construction yellow is no longer a primary or default accent. It may still be
+used as a secondary accent, and only where all three of these hold:
+
+1. It clearly connects to existing Legacy social graphics - check
+   `assets/reference/instagram/` before using it; do not add yellow branding
+   that has no basis there.
+2. It measurably improves CTA visibility over a blue-based treatment.
+3. It does not conflict with or compete against the real logo on the same
+   surface.
+
+Absent all three, use blue. Do not fall back to yellow as the default accent.
+
+Exact values are sampled from the real logo, not invented. If a future asset
+(a truck decal, a sign, a second logo file) contradicts this sampling, resample
+and update this section rather than averaging the two.
 
 ### Type
 

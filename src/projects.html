@@ -6,7 +6,7 @@ permalink: /projects/
 ---
 
 <div class="phead">
-  <div class="wrap">
+  <div class="wrap phead__in">
     <h1>Projects</h1>
     <p>
       Work completed across San Antonio, Boerne, Bandera and Fair Oaks. Sizes are
@@ -18,21 +18,50 @@ permalink: /projects/
 {% for s in services %}
   {% set group = projects | byCategory(s.id) %}
   {% if group | length %}
-    <section id="{{ s.id }}">
+    <div class="pgroup" id="{{ s.id }}">
       <div class="wrap">
-        <div class="s-head">
-          <h2>{{ s.title }}</h2>
-        </div>
+        <h2>{{ s.title }}</h2>
 
         <div class="pgrid">
           {% for p in group %}
-            <article class="pcard{% if group | length == 1 %} pcard--wide{% endif %}">
+            {% set before = p.images | findBy("role", "before") %}
+            {% set after = p.images | findBy("role", "after") %}
+
+            {#
+              Only a group with a single project goes full width. A before/after
+              pair sits happily inside a normal column, and forcing it wide left
+              an empty cell next to its sibling.
+            #}
+            <article class="pcard{% if group | length == 1 %} pcard--wide{% endif %}" id="{{ p.id }}">
 
               <div class="pcard__media">
-                {% set phClass = "ph--4x3 ph--light" %}
-                {% set phLabel = p.title + (", " + p.location if p.location else "") + "." %}
-                {% set phFile = "projects/" + p.id + ".jpg" %}
-                {% include "partials/ph.njk" %}
+                {% if before and after %}
+                  {#
+                    Only rendered where a genuine pair exists in the source
+                    photography. Never assembled from two unrelated photos.
+                  #}
+                  <div class="ba">
+                    <div class="ba__half">
+                      {% photo before.file, before.alt, "(min-width: 48rem) 28vw, 50vw" %}
+                      <span class="ba__tag">Before</span>
+                    </div>
+                    <div class="ba__half">
+                      {% photo after.file, after.alt, "(min-width: 48rem) 28vw, 50vw" %}
+                      <span class="ba__tag">After</span>
+                    </div>
+                  </div>
+                {% else %}
+                  {% photo p.images[0].file, p.images[0].alt, "(min-width: 48rem) 46vw, 100vw" %}
+                  {% if p.images | length > 1 %}
+                    <div class="pstrip">
+                      {% for img in p.images %}
+                        {% if not loop.first and loop.index <= 3 %}
+                          {% photo img.file, img.alt, "(min-width: 48rem) 23vw, 50vw" %}
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                {% endif %}
               </div>
 
               <div class="pcard__body">
@@ -56,7 +85,7 @@ permalink: /projects/
                 #}
                 {% if site.demoNotes and p.detailsNeeded | length %}
                   <div class="pcard__todo">
-                    <strong>Still needed:</strong>
+                    <strong>Still to confirm with owner:</strong>
                     {% for d in p.detailsNeeded %}{{ d }}{% if not loop.last %}. {% endif %}{% endfor %}
                   </div>
                 {% endif %}
@@ -66,7 +95,7 @@ permalink: /projects/
           {% endfor %}
         </div>
       </div>
-    </section>
+    </div>
   {% endif %}
 {% endfor %}
 
